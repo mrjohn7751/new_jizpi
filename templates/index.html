@@ -1,0 +1,329 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- Carusel bootstrap -->
+    <section class="main-img  " id="main-img">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                {% for photos in ekranImg %}
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ photos.id }}" class="active" aria-current="true" aria-label="Slide 1"></button>
+                {% endfor %}
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="{% static "photos/new-jizpi.jpg" %}" class="d-block w-100"></div>
+                {% for photos in ekranImg %}
+                    <div class="carousel-item"><img src="{{ photos.img.url }}" class="d-block w-100"></div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Carusel bootstrap END -->
+{% endblock content %}
+
+  
+{% block news %}
+     <!-- Son'gi yangiliklar -->
+     <section class="block news container" id="news">
+        <div class="top-text">
+            <div>
+                <h3 class='news-h3'>So'ngi Yangiliklar</h3>
+                <div class="line-b"></div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="nav-news mt-4">
+            <ul>
+                <li><a href="{% url "index" %}">Barcha yangiliklar</a></li>
+                {% for category in Category_news %}
+                    <li><a href="{% url "category_list" category.pk %}"> {{ category.title }} </a></li>
+                {% endfor %}
+            </ul>
+            <div class="elonlar_blocki">
+                {% for article in Article_news %}
+                {% if forloop.counter <= 4 %}
+                    <div class="card">
+                        <img src="{{ article.img.url }}" alt="">
+                        <h4>{{ article.title|truncatewords:4 }}</h4>
+                        <p>{{ article.body|truncatewords:10 }}</p>
+                        <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
+                        <span>{{ article.created_at }}</span>
+                    </div>
+                {% endif %}
+            {% endfor %}              
+            </div>
+        </div>
+    </section>
+    <!-- Son'gi yangiliklar END -->
+{% endblock news %}
+       
+{% block elon %}
+     <!-- Son'gi yangiliklar -->
+     <section class="block news container" id="news">
+        <div class="top-text">
+            <div>
+                <h3 class='news-h3'>So'ngi Elonlar</h3>
+                <div class="line-b"></div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="nav-news mt-4">
+            {% comment %} <ul>
+                <li><a href="{% url "index" %}">Barcha yangiliklar</a></li>
+                {% for category in Category_news %}
+                    <li><a href="{% url "category_list" category.pk %}"> {{ category.title }} </a></li>
+                {% endfor %}
+            </ul> {% endcomment %}
+            <div class="elonlar_blocki">
+                {% for article in Article_news %}
+                    <div class="card">
+                        <img src="{{ article.img.url }}" alt="">
+                        <h4>{{ article.title|truncatewords:4 }}</h4>
+                        <p>{{ article.body|truncatewords:10 }}</p>
+                        <a href="#" class="btn">Batafsil</a>
+                        <span>{{ article.created_at }}</span>
+                    </div>
+                {% endfor %}               
+            </div>
+        </div>
+    </section>
+    <!-- Son'gi yangiliklar END -->
+{% endblock elon %}
+ 
+
+{% block hiwi %}
+    <div class="container-fluid ">
+        <section class="block hiwi container" id="hiwi">
+            <div class="container">
+                <div class="top-text">
+                <div>
+                    <h3>Bizning Tizimlar</h3>
+                    <div class="line-b"></div>
+                </div>
+                <div class="line"></div>
+                </div>
+                <div class="top-hiwi">
+
+
+                    <div class="owl-carousel owl-theme">
+                    
+                        <a  href="https://hemis.jizpi.uz" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Hemis o`qituvchi</h6>
+                        </a>
+                    
+                        <a  href="https://student.jizpi.uz/" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Hemis Talaba</h6>
+                        </a>
+                        
+                        <a  href="https://moodle.jizpi.uz/" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Modle</h6>
+                        </a>
+                        
+                        <a  href="http://jurnal.jizpi.uz/" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Online Jurnal</h6>
+                        </a>
+                        
+                        <a  href="https://lib.jizpi.uz" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Kutubxona</h6>
+                        </a>
+                        
+                        <a  href="https://hnt.jizpi.uz:8080" class="card item" >
+                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <span class="box-line"></span>
+                            <span class="box-line-radius"></span>
+                            <h6>Jizpi Aborot Tizimi</h6>
+                        </a>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock hiwi %}
+
+    
+{% block facultet %}
+     <!-- Fakultetlar -->
+     <section class="block fakultetlar container" id="fakultetlar">
+        <div class="top-text">
+            <div>
+                <h3>Fakultetlar</h3>
+                <div class="line-b"></div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/energetika.png" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Energetika va Radioelektronika</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/Avto.png" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Transport</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/kimyo.png" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Sanoat texnalogiyalari</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/qur.jpg" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Arxitektura va Qurilish</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/servis.jpg" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Servis</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card_fakultet">
+                <a href="#" class="fakultet">
+                    <img src="{% static "Photos/qmb.jpg" %}" alt="">
+                    <div class="liner-gradient">
+                        <h6>Qurilish Materiallari va Kimyoviy Texnalogya</h6>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+        
+    </section>
+    <!-- Fakultetlar END -->
+{% endblock facultet %}
+
+
+{% block kursatgich %}
+    <!-- Korsatgichkar -->
+    <section class="block korsatgich" id="korsatgich">
+        <div class="container">
+            <div class="top-text">
+                <div>
+                    <h3>Bizning Ko'rsatgichlar</h3>
+                    <div class="line-b"></div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="container-fluid cls">
+            <div class="container">
+                <div class="kursatgich">
+                    <h1>O'quv Faoliyat</h1>
+                    <ul>
+                        <li><h1>35+</h1> <img src="{% static "Photos/icons/professor.png" %}">Professorlar</li>
+                        <li><h1>450+</h1> <img src="{% static "Photos/icons/teacher1.png" %}">O‘qituvchilar</li>
+                        <li><h1>260+</h1> <img src="{% static "Photos/icons/magistr.png" %}">Magistrlar </li>
+                        <li><h1>260+</h1> <img src="{% static "Photos/icons/qoshma_talim.png" %}">Qo‘shma ta’lim talabalari</li>
+                    </ul>
+                    <ul>
+                        <li><h1>100+</h1> <img src="{% static "Photos/icons/teacher.png" %}">Dotsent</li>
+                        <li><h1>6390+</h1> <img src="{% static "Photos/icons/talaba.png" %}">Bakalavrlar</li>
+                        <li><h1>2880+</h1> <img src="{% static "Photos/icons/sirtqi.png" %}">Sirqi talabalar</li>
+                        <li><h1>10+</h1> <img src="{% static "Photos/icons/talaba.png" %}">Xorijiy talabalar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Korsatgichlar END -->
+{% endblock kursatgich %}
+       
+
+{% block fodaliXavola %}
+    
+        <!-- Foydali Xavola -->
+        <section class="block korsatgich" id="xavola">
+            <div class="container">
+                <div class="top-text">
+                    <div>
+                        <h3>Foydali Xavolalar</h3>
+                        <div class="line-b"></div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="container-fluid ">
+                <div class="container mt-5 mb-3">
+                    <div class="owl-carousel owl-theme">
+                        <a href="https://uzbmb.uz/" class=" elementlar">
+                            <img src="{% static "Photos/icons/gerp.png" %}">
+                            <h3>Davlat Test Markazi</h3>
+                        </a>
+                        <a href="https://uzedu.uz/uz" class=" elementlar">
+                            <img src="{% static "Photos/icons/XTV.jpg" %}">
+                            <h3>Xalq ta'limi Vazirligi</h3>
+                        </a>
+                        <a href="https://ziyonet.uz/" class=" elementlar">
+                            <img src="{% static "Photos/icons/ziyonet.jpg" %}">
+                            <h3>ZiyoNet - Ta'lim Portali</h3>
+                        </a>
+                        <a href="https://hukumat.uz/" class=" elementlar">
+                            <img src="{% static "Photos/icons/gerp.png" %}">
+                            <h3>Xukumat Portali</h3>
+                        </a>
+                        <a href="https://adliya.uz/" class=" elementlar">
+                            <img src="{% static "Photos/icons/Adliya_vazirligi-01.png" %}">
+                            <h3>Adliya Vazirligi</h3>
+                        </a>
+                        
+                     
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Foydali Xavola END -->
+{% endblock fodaliXavola %}
+        
+
+
+
+
+
+
+
+
+ 
