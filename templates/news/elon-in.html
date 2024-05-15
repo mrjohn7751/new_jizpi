@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+      <div class="parent mt-5">
+        <div class="right-content">
+          <div class="right-content-img">
+            <img src="{{ Article_elon.img.url }}"alt="Img"/>
+          </div>
+          <div class="right-content-time mt-3">
+            <div>
+              {{ Article_elon.created_at }}
+              <p></p>
+            </div>
+            <span></span>
+          </div>
+
+          <div class="right-content-title">
+            <h2>{{ Article_elon.title }}</h2>
+          </div>
+          <div class="right-content-decr mt-4">
+            <p>{{ Article_elon.body }}</p>
+          </div>
+        </div>
+        <div class="left-content">
+          <div class="left-content-img">
+            <img src="{{ Article_elon.img.url }}"alt="Img"/>
+            <img src="{{ Article_elon.img.url }}"alt="Img"/>
+            <img src="{{ Article_elon.img.url }}"alt="Img"/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}

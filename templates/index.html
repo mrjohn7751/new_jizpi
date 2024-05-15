@@ -42,12 +42,6 @@
         </div>
 
         <div class="nav-news mt-4">
-            <ul>
-                <li><a href="{% url "index" %}">Barcha yangiliklar</a></li>
-                {% for category in Category_news %}
-                    <li><a href="{% url "category_list" category.pk %}"> {{ category.title }} </a></li>
-                {% endfor %}
-            </ul>
             <div class="elonlar_blocki">
                 {% for article in Article_news %}
                 {% if forloop.counter <= 4 %}
@@ -78,22 +72,18 @@
         </div>
 
         <div class="nav-news mt-4">
-            {% comment %} <ul>
-                <li><a href="{% url "index" %}">Barcha yangiliklar</a></li>
-                {% for category in Category_news %}
-                    <li><a href="{% url "category_list" category.pk %}"> {{ category.title }} </a></li>
-                {% endfor %}
-            </ul> {% endcomment %}
             <div class="elonlar_blocki">
-                {% for article in Article_news %}
+                {% for article in Article_elon %}
+                {% if forloop.counter <= 4 %}
                     <div class="card">
                         <img src="{{ article.img.url }}" alt="">
                         <h4>{{ article.title|truncatewords:4 }}</h4>
                         <p>{{ article.body|truncatewords:10 }}</p>
-                        <a href="#" class="btn">Batafsil</a>
+                        <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
                         <span>{{ article.created_at }}</span>
                     </div>
-                {% endfor %}               
+                {% endif %}
+            {% endfor %}              
             </div>
         </div>
     </section>

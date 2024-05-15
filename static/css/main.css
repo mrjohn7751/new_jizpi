@@ -2,221 +2,351 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Roboto; */
-
-}
-
-/* Optional: Customize scrollbar */
-::-webkit-scrollbar {
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 1200px) {
+    .close{
+      display: block !important;
+      cursor: pointer;
+      margin-top:   10px;
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+  
+    }
+    .menu{
+      display: block !important;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: -70px;
+      right: 60px;
+      margin-top: 100px;
+    }
+  
+    .responsive{
+      display: none !important;
+      position: fixed;
+      z-index: 999 !important;
+      top: 0;
+      right: 0;
+      width: 300px !important; 
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start !important;
+      background-color: #1566B7;
+      transition: all .3s;
+      box-shadow: 0 0 15px #000 !important;
+    }
+   
+    .dropdown{
+      border-bottom: 1px solid wheat;  
+      width: 100%;
+      text-align: center;
+    }
+    .dropdown:hover .navbar_nav_a {
+      background: #fff;
+      color: black !important;
+    }
+    .navbar_nav_a{
+      width: 100%;
+    }
+  
+    
+  }
+  
+  .menu, .close{
+    display: none;
+  }
+  
+  /* ############################################################################## */
+  
+  .header_new{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  
+  .navbar_new{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; 
+  }
+  
+  
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  
+  .navbar_nav_a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .dropdown_ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 15px #072d53;
+    min-width: 100px; 
+    left: -28px;
+    z-index: 999;
+    list-style: none;
+  }
+  
+  
+  .dropdown_li a {
+    display: block;
+    margin-left: -32px;
+    color: #000 !important;
+    text-decoration: none;
+    width: 170px;
+    height: 35px;
+    border-bottom: 1px solid #1B6EC0;
+    padding-top: 5px;
+    text-align: center;
+    
+  
+  }
+  
+  .dropdown:hover .dropdown_ul {
+    display: block;
+  }
+  
+  .dropdown .dropdown_ul .dropdown_li a:hover{
+    color: #fff !important;
+    background: #1566B7;
+  }
+  
+  
+  
+  
+  
+  /* ############################################################################## */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Optional: Customize scrollbar */
+  ::-webkit-scrollbar {
     width: 8px;
-}
-::-webkit-scrollbar-thumb {
+  }
+  ::-webkit-scrollbar-thumb {
     background-color: #1566B7;
     border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
+  }
+  
+  ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
-}
-
-.material-symbols-outlined {
+  }
+  
+  .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24;
   color: #fff;
-}
-/*  
+  }
+  
+  
+  /*  
     color: #1566B7;         kuk rang navbar 
     
     color: #093663;         navbar:hover
     font-family: Roboto;
-
+  
     background: #585858;    Useful information
-*/
-
-/* ############################################## */
-
-.jizpi-logo{
+  */
+  
+  /* ############################################## */
+  
+  
+  .jizpi-logo{
     width: 100px;
     border-radius: 100%;
-}
-
-.bg-color{
+  }
+  
+  .bg-color{
     background: #1566B7;
     position: sticky;
     z-index: 9999;
-
+  
     top: 0px;
-}
-
-.header_new{
+  }
+  
+  
+  
+  
+  
+  .nav-logo-left{
     display: flex;
-    justify-content: space-between;
-}
-
-
-
-.nav-logo-left{
-    display: flex;
-}
-
-.nav-logo-left h2{
+  }
+  
+  .nav-logo-left h2{
     font-size: 16px;
     margin-left: 10px;
     color: #fff;
-}
- .nav-logo-left h2 span{
+  }
+  .nav-logo-left h2 span{
     display: block;
-}
-
-
-.navbar_new{
-    width: 100%;
-    margin: 0 19px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.navbar_new a{
+  }
+  
+  
+  
+  
+  .navbar_new a{
     text-decoration: none;
     color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.use-inf{
+  }
+  
+  
+  
+  
+  .use-inf{
     width: 100%;
     height: 30px;
     background: #585858;
     position: sticky;
     top: 0px;
     z-index: 9999;
-}
-.cont-inf{
+  }
+  .cont-inf{
     display: flex;
     justify-content: space-between;
-}
-
-.cont-inf-left{
+  }
+  
+  .cont-inf-left{
     display: flex
-}
-.cont-inf-left p{
+  }
+  .cont-inf-left p{
     color: #fff;
-}
-.cont-inf-left a{
+  }
+  .cont-inf-left a{
     padding:0 6px;
-}
-.cont-inf-left a img{
+  }
+  .cont-inf-left a img{
     border-radius: 0;
-}
-
-.cont-inf-left a i{
+  }
+  
+  .cont-inf-left a i{
     color: #fff !important;
     font-size: 15px;
     padding: 1px 6px;
-}
-
-.cont-inf a span{
+  }
+  
+  .cont-inf a span{
     color: #fff !important;
     font-size: 20px;
     margin: 3px;
-}
-/* ############################################## */
-
-.cont-inf-right{
+  }
+  /* ############################################## */
+  
+  .cont-inf-right{
     position: relative;
     width: 130px;
-}
-
-.cont-inf-right a{
+  }
+  
+  .cont-inf-right a{
     text-decoration: none;
     color: #fff;
-}
-.tizim{
+  }
+  .tizim{
     position: absolute;
     top: 2px;
     right: 0;
-}
-
-/* ############################################## */
-
-
-
-
-
-/* ############################################## */
-
-.carousel-item img{
+  }
+  
+  /* ############################################## */
+  
+  
+  
+  
+  
+  /* ############################################## */
+  
+  .carousel-item img{
     width: 100%;
     object-fit: cover;
     border-radius: 0 !important;
     height: 700px !important;
-}
-.carousel-indicators button{
+  }
+  .carousel-indicators button{
     border-radius: 100%;
     width: 10px !important;
     height: 10px !important;
-}
-
-.news{
+  }
+  
+  .news{
     margin-top: 50px;
     border-top: none;
-}
-/* .block{
+  }
+  /* .block{
     border: 1px solid red;
-} */
-.block .top-text{
+  } */
+  .block .top-text{
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
-}
-.top-text h3{
+  }
+  .top-text h3{
     color: #093663;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-}
-.top-text .news-h3{
+  }
+  .top-text .news-h3{
     color: #093663;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-}
-.block .top-text .line{
+  }
+  .block .top-text .line{
     width: 85%;
     margin-top: 12px;
     height: 2px;
     background-color: #093663;
-}
-.top-text .line-b{
+  }
+  .top-text .line-b{
     width: 50%;
     margin-top: 7px;
     height: 3px;
     background: #FFBD13;
-}
-.korsatgich .top-text .line{
+  }
+  .korsatgich .top-text .line{
     width: 80%;
-}
-.nav-news ul{
+  }
+  .nav-news ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-left: -30px;
     margin-bottom: 50px;
-}
-.nav-news ul li a{
+  }
+  .nav-news ul li a{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 30px;
@@ -224,34 +354,34 @@
     transition: all .3s;
     font-weight: 600;
     color: #093663;
-}
-
-.nav-news ul li a:hover{
+  }
+  
+  .nav-news ul li a:hover{
     color: #FFF;
     background: #093663;
     transition: all .3s;
-}
-
-/* ############################################## */
-
-.top-hiwi{
+  }
+  
+  /* ############################################## */
+  
+  .top-hiwi{
     margin-top: 10px;
     width: 100%;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-}
-
-
-.top-hiwi .card{
+  }
+  
+  
+  .top-hiwi .card{
     border: none;
     width: 160px;
     margin-top: 50px;
     height: auto;
     text-decoration: none;
-}
-
-.top-hiwi .card .box{
+  }
+  
+  .top-hiwi .card .box{
     width: 140px;
     height: 140px;
     margin: 14px;
@@ -260,69 +390,69 @@
     /* border: 1px solid red; */
     transition: all .2s;
     padding:35px;
-}
-
-.top-hiwi .card .box:hover{
+  }
+  
+  .top-hiwi .card .box:hover{
     transition: all .2s;
     border: 1px solid #093663;
     border-top: 8px solid #093663;
-
-}
-
-
-.top-hiwi .card .box-line{
+  
+  }
+  
+  
+  .top-hiwi .card .box-line{
     width: 3px;
     height: 50px;
     margin-left: 50%;
     background: #093663;
-}
-
-.top-hiwi .card .box-line-radius{
+  }
+  
+  .top-hiwi .card .box-line-radius{
     width: 13px;
     height: 13px;
     background: #093663;
     border: none;
     border-radius: 100px;
     margin-left: 47%;
-}
-
-.top-hiwi .card h6{
+  }
+  
+  .top-hiwi .card h6{
     text-align: center;
     margin-top: 10px;
     font-weight: 600;
     color: #093663;
     /* background: #093663; */
-}
-
-.card_fakultet{
+  }
+  
+  .card_fakultet{
     width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-}
-
-.fakultet {
+  }
+  
+  .fakultet {
     position: relative;
     object-fit: cover;
     border-radius: 15px;
     width: 220px;
     height: 300px;
     z-index: 9;
-}
-.fakultet h6{
+  }
+  .fakultet h6{
     margin-top: 250px;   
     text-align: center;
     color: #fff;
-}
-.fakultet img{
+  }
+  .fakultet img{
     opacity: .6;
     transition: all .3s;
     width: 220px;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
-}
-.fakultet .liner-gradient{
+  }
+  .fakultet .liner-gradient{
     position: absolute;
     bottom: -10px;
     border-radius: 15px;
@@ -331,48 +461,48 @@
     border-bottom-right-radius: 20px !important;
     width: 220px;
     height: 310px;
-}
-
-.fakultet:hover img{
+  }
+  
+  .fakultet:hover img{
     transition: all .3s;
     opacity: 1;
-}
-
-.elonlar_blocki{
+  }
+  
+  .elonlar_blocki{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;    
-}
-.elonlar_blocki .card{
+  }
+  .elonlar_blocki .card{
     position: relative;
     width: 270px !important;
     height: 430px;
     transition: all .2s;
-}
-.elonlar_blocki .card:hover{
+  }
+  .elonlar_blocki .card:hover{
     box-shadow: 0 0 15px #1b136450;
     transition: all .2s;
-
-}
-.elonlar_blocki .card img{
+  
+  }
+  .elonlar_blocki .card img{
     height: 200px;
-}
-.elonlar_blocki .card h4,.elonlar_blocki .card p{
+  }
+  .elonlar_blocki .card h4,.elonlar_blocki .card p{
     text-align: center;
     margin: 5px 3px;
     color: #06203a;
-}
-.card .h5{
+  }
+  .card .h5{
     color: #06203a;
     text-align: center;
     margin-top: 10px;
-}
-.card p{
+  }
+  .card p{
     color: #06203a;
     text-align: center;
     font-size: 14px;
-}
-.elonlar_blocki .card .btn{
+  }
+  .elonlar_blocki .card .btn{
     position: absolute;
     left: 4px;
     width: 97%;
@@ -381,55 +511,55 @@
     color: #fff;
     transition: all .3s;
     bottom: 4px;
-}
-.elonlar_blocki .card .btn:hover{
+  }
+  .elonlar_blocki .card .btn:hover{
     transition: all .3s;
     background: #072d53;
-}
-.elonlar_blocki .card span{
+  }
+  .elonlar_blocki .card span{
     position: absolute;
     bottom: 48px;
     right: 35px;
     font-size: 14px;
-}
-
-.staticlik_block{
+  }
+  
+  .staticlik_block{
     /* border: 1px solid red; */
     justify-content: center !important;
-}
-
-
-.cls{
+  }
+  
+  
+  .cls{
     background-color: #06203a;
     margin-top: 10px;
     padding: 50px 0;
-}
-
-.cls2{
+  }
+  
+  .cls2{
     background-color: #06203a;
     padding: 20px 0;
     margin-top: 50px;
-}
+  }
   
-.kursatgich{
+  .kursatgich{
     color: #06203a;
-}
-.kursatgich h1{
+  }
+  .kursatgich h1{
     font-size: 40px;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-.kursatgich ul{
+  }
+  .kursatgich ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
     font-size: 36px;
     list-style: none;
-}
-.kursatgich ul li{
+  }
+  .kursatgich ul li{
     border: 1px solid #093663;
     width: 250px;
     font-size: 25px;
@@ -439,25 +569,25 @@
     margin: 10px;
     color: #585858;
     transition: all .3s;
-}
-
-.kursatgich ul li:hover{
+  }
+  
+  .kursatgich ul li:hover{
     transition: all .3s;
     color: #fff;
     border: 1px solid #1566B7;
-
-}
-
-.kursatgich ul li img{
+  
+  }
+  
+  .kursatgich ul li img{
     width: 100px;
     display: block;
     margin: 10px;
     margin-left: 70px;
-
-}
-
-
-.elementlar{
+  
+  }
+  
+  
+  .elementlar{
     height: 250px;
     width: 260px;
     padding: 10px;
@@ -467,97 +597,98 @@
     border: 1px solid aquamarine;
     text-decoration: none;
     color: #868686;
-}
-.elementlar:hover{
+  }
+  .elementlar:hover{
     border: 1px solid #1566B7;
     color: #06203a;
-}
-.elementlar img{
+  }
+  .elementlar img{
     width: 150px !important;
     margin-left: 45px;
     border-radius: 100%;
-}
-.elementlar h3{
+  }
+  .elementlar h3{
     font-size: 18px;
     text-align: center;
     /* margin-top: 50px !important; */
-}
-
-
-
-
-.col1{
+  }
+  
+  
+  
+  
+  .col1{
     color: #fff;
     text-transform: uppercase;
-}
-.col1 p{
+  }
+  .col1 p{
     font-size: 25px;
     font-weight: 500;
-}
-.col1 span{
+  }
+  .col1 span{
     margin-left: 70px;
-}
-.col1 img{
+  }
+  .col1 img{
     width: 150px;
     margin-left: 50px;
     border-radius: 100%;
-}
-.col1 .statik_box{
+  }
+  .col1 .statik_box{
     display: flex;
     margin-top: 20px;
     margin-left: -30px;
-}
-.col1 .statik_box .statik_card{
+  }
+  .col1 .statik_box .statik_card{
     width: 100px;
     height: 40px;
     margin-right: 10px;
     border: 1px solid #585858;
-}
-
-
-
-.col2 p{
+  }
+  
+  
+  
+  .col2 p{
     font-size: 14px;
-}
-.col2 p span{
+  }
+  .col2 p span{
     margin: 0px ;
-}
-.col2 .map iframe{
+  }
+  .col2 .map iframe{
     width: 370px;
     height: 250px;
-}
-
-.col3{
+  }
+  
+  .col3{
     color: #FFF;
-}
-.col3 h3{
+  }
+  .col3 h3{
     margin-bottom: 60px;
-}
-.col3 p{
+  }
+  .col3 p{
     font-size: 13px;
     margin-left: 50px;
-}
-.footer_hiwi{
+  }
+  .footer_hiwi{
     margin-left: 50px;
-}
-.footer_hiwi h3{
+  }
+  .footer_hiwi h3{
     margin-top: 55px;
     margin-bottom: 20px;
-}
-.footer_hiwi ul{
+  }
+  .footer_hiwi ul{
     display: flex;
     justify-content: flex-start;
     list-style: none;    
     margin-left: -30px;
-}
-.footer_hiwi ul li{
+  }
+  .footer_hiwi ul li{
     margin-right: 10px;
-}
-.footer_hiwi ul li a img{
+  }
+  .footer_hiwi ul li a img{
     width: 40px;
-}
-
-.item{
+  }
+  
+  .item{
     width: 250px;
     height: 300px;
-}
+  }
+  

@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="use-inf">
+{% comment %} <nav class="use-inf">
     <div class="container">
         <div class="cont-inf">
             <div class="cont-inf-left">
@@ -41,5 +41,136 @@
             </nav>
         </header>
     </div>
+</div> {% endcomment %}
+
+
+<nav class="use-inf">
+    <div class="container">
+        <div class="cont-inf">
+            <div class="cont-inf-left">
+                <a href="#"><img width="30" height="20" src="{% static "/Photos/icons/flag.png" %}" alt=""></a><p>|</p>
+                <a href="#"><img width="20" height="20" src="{% static "/Photos/icons/gerp.png" %}" alt=""></a><p>|</p>
+                <a href="#"><img src="{% static "/Photos/svg/music.svg" %}" alt=""></a><p>|</p>
+                <a href="#"><img src="{% static "/Photos/svg/lan.svg" %}" alt=""></a><p>|</p>
+                <a href="#"><img src="{% static "/Photos/svg/eays.svg" %}" alt=""></a><p>|</p>
+                <a href="#"><img src="{% static "/Photos/svg/email.svg" %}" alt=""></a><p>|</p>
+                <a href="#"><img src="{% static "/Photos/svg/cloud.svg" %}" alt=""></a><p>|</p>
+            </div>
+            <div class="cont-inf-right">
+                <img src="{% static "Photos/svg/locked.svg" %}" alt="">
+                <a href="#" class="tizim">Tizimga kirish</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-color">
+  <div class="container">
+    <div class="header_new">
+      <div class="nav-logo-left">
+          <a href="{% url "index" %}"><img class="jizpi-logo" src="{% static "Photos/icons/jizpi-logo.png" %}" alt=""></a>
+          <h2 class="text-jizpi">
+              <span class="mt-3">JIZZAX</span>
+              <span>POLITEXNIKA</span>
+              <span>INSTITUTI</span>
+          </h2>
+      </div>  
+
+      <img class="menu" src="{% static "Photos/icons/menu512.png" %}">
+
+      <div class="navbar_new  responsive">
+        <img class="close" src="{% static "Photos/icons/close48.png" %}">
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Yangiliklar</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="{% url "news" %}">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="{% url "elon" %}">Elonlar</a></li>
+                </ul>
+            </div>
+              
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Institut</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+              
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Tuzilma</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+              
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Qabul-2024</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+              
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Talabalar</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+              
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Faoliyat</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Aloqa</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="navbar_nav_a">Interaktiv xizmatmatlar</a>
+                <ul class="dropdown_ul">
+                  <li class="dropdown_li"><a href="#">Yangiliklar</a></li>
+                  <li class="dropdown_li"><a href="#">Elonlar</a></li>
+                </ul>
+            </div>
+              
+      </div>
+  </div>
+    
+  </div>
 </div>
+
+
+
+  
+  
+
+
+<script>
+  const menu = document.querySelector('.menu')
+  const close = document.querySelector('.close')
+  const navbarNew = document.querySelector('.responsive')
+
+  menu.addEventListener('click',()=>{
+    navbarNew.style="display: block !important;"
+  })
+
+  close.addEventListener('click',()=>{
+    navbarNew.style="display: none  !important;"
+  })
+
+
+
+</script>
+
 <!-- Navbar end -->

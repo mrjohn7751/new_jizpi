@@ -32,7 +32,16 @@ def category_list(request,pk):
         'Category_news':Category_news,
         'Article_news':Article_news,  
     }
-    return render(request,'news.html',context)
+    return render(request,'news/news.html',context)
+
+def category_elon(request,pk):
+    Category_elon = CategoryElon.objects.all()
+    Article_elon = ArticleElon.objects.all()
+    context = {
+        'Category_elon':Category_elon,
+        'Article_elon':Article_elon, 
+    }
+    return render(request,'news/elon.html',context)
 
 
 def news(request):
@@ -42,8 +51,7 @@ def news(request):
         'Category_news':Category_news,
         'Article_news':Article_news,
     }
-    return render(request, 'news.html',context)
-
+    return render(request,'news/news.html',context)
 
 
 def news_detail(request,pk):
@@ -51,5 +59,24 @@ def news_detail(request,pk):
     context = {
         'article':Article_news,
     }
-    return render(request,'news-in.html',context)
+    return render(request,'news/news-in.html',context)
+
+
+
+def elon(request):
+    Category_elon = CategoryElon.objects.all()
+    Article_elon = ArticleElon.objects.all()
+    context = {
+        'Category_elon':Category_elon,
+        'Article_elon':Article_elon,
+    }
+    return render(request,'news/elon.html',context)
+
+
+def elon_detail(request,pk):
+    Article_elon = ArticleElon.objects.get(pk=pk)
+    context = {
+        'Article_elon':Article_elon,
+    }
+    return render(request,'news/elon-in.html',context)
 
