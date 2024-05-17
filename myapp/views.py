@@ -80,3 +80,31 @@ def elon_detail(request,pk):
     }
     return render(request,'news/elon-in.html',context)
 
+################################################################################################
+# Instut hamma pagelari
+
+def institut(request):
+    return render(request,'institut/institut.html')
+
+def institutPage_1(request):
+    return render(request,'institut/instut-page1.html')
+
+def institutPage_2(request):
+    return render(request,'institut/instut-page2.html')
+
+def institutPage_3(request):
+    return render(request,'institut/instut-page3.html')
+
+def institutPage_4(request):
+    return render(request,'institut/instut-page4.html')
+
+def institutPage_5(request):
+    return render(request,'institut/instut-page5.html')
+
+def institutPage_6(request):
+    return render(request,'institut/instut-page6.html')
+
+def institutPage_7(request):
+    return render(request,'institut/instut-page7.html')
+
+################################################################################################

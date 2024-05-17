@@ -137,19 +137,6 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   /* Optional: Customize scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
@@ -339,6 +326,7 @@
   .korsatgich .top-text .line{
     width: 80%;
   }
+
   .nav-news ul{
     display: flex;
     justify-content: space-between;
@@ -530,20 +518,15 @@
   
   
   .cls{
-    background-color: #06203a;
+    /* background-color: #06203a; */
     margin-top: 10px;
     padding: 50px 0;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Photos/statistika.jpg)  !important;
+    background-attachment:fixed !important ;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
-  
-  .cls2{
-    background-color: #06203a;
-    padding: 20px 0;
-    margin-top: 50px;
-  }
-  
-  .kursatgich{
-    color: #06203a;
-  }
+
   .kursatgich h1{
     font-size: 40px;
     text-align: center;
@@ -691,4 +674,54 @@
     width: 250px;
     height: 300px;
   }
+
+
+  .footer{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Photos/footer.png);
+    background-attachment: fixed !important;
+  }
+
+  .cls2{
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
   
+/* ############################################### */
+.block_left .card-box_left{
+  display: flex;
+  flex-direction: column;
+}
+
+.block_left .card-box_left a{
+  display: block;
+  margin: 5px 0;
+  padding: 10px 0;
+  background-color: #144c84;
+  color: #fff;
+  transition: all .3s;
+
+}
+
+.block_right .card-box_right{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block_right .card-box_right a{
+  display: block;
+  width: 300px;
+  padding: 20px 0;
+  margin: 5px;
+  background-color: #144c84;
+  color: #fff;
+  transition: all .3s;
+}
+
+.block_left .card-box_left a:hover, .block_right .card-box_right a:hover {
+  transition: all .3s;
+  background-color: #0b2f52;
+
+}
