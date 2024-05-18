@@ -12,12 +12,7 @@
       </div>
 
       <div class="nav-news mt-4">
-           <ul>
-              <li><a href="{% url "news" %}">Barcha yangiliklar</a></li>
-              {% for category in Category_news %}
-                  <li><a href="{% url "category_list" category.pk %}"> {{ category.title }} </a></li>
-              {% endfor %}
-          </ul>
+           
           <div class="elonlar_blocki row">
             {% for article in Article_news %}
                 <div class="card mb-3">

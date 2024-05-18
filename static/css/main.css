@@ -725,3 +725,15 @@
   background-color: #0b2f52;
 
 }
+
+
+.p1920{
+  text-align: right !important;
+  width: 100% !important;
+  /* margin-left: 65%; */
+  margin-bottom: 25px;
+}
+.p1920_{
+  width: 100% !important; 
+  text-align: center !important;
+}
