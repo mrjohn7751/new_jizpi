@@ -61,4 +61,14 @@ urlpatterns = [
     path('rektorat/Moliyaviy-ishlari',prMoliya,name="prMoliya"),
     path('rektorat/Xalqaro-ishlari',prXalqaro,name="prXalqaro"),
     
+    
+    
+    path('bolimalar',bolimlar,name="bolimlar"),
+    
+    
+    
+    path('markazlar',markazlar,name="markazlar"),
+    
+    
+    
 ]

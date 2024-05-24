@@ -747,7 +747,6 @@
 .__cards{
   display: flex;
   justify-content: flex-start;
-  width: 900px;
   flex-wrap: wrap;
   justify-content: center;
   
@@ -756,10 +755,10 @@
   width: 250px !important;
   height: 350px !important;
   border-radius: 20px;
-  background-color: rgb(228, 228, 228);
+  /* background-color: rgb(228, 228, 228); */
   box-shadow: 0 0 5px gray;
   text-align: center;
-  transition: all .5s;
+  transition: all .2s;
   cursor: pointer;
   margin: 20px;
   text-decoration: none;
@@ -786,8 +785,8 @@
 
 
 .__card:hover{
-  transition: all .3s;
-  box-shadow: 0 0 15px #093663;
+  transition: all .2s;
+  box-shadow: 0 0 10px #093663;
 }
 
 
