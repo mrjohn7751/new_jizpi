@@ -46,7 +46,19 @@ urlpatterns = [
     path('institut/meyoriy-hujjatlar/prezident-farmonlari',mhPage2, name='mh-page-2'),
     path('institut/meyoriy-hujjatlar/vazirlik-buyruqlari',mhPage3, name='mh-page-3'),
     path('institut/meyoriy-hujjatlar/adliya-qarorlari',mhPage4, name='mh-page-4'),
+    path('institut/meyoriy-hujjatlar/hukumat-qarorlari',mhPage5, name='mh-page-5'),
+    path('institut/meyoriy-hujjatlar/hukumat-dasturi',mhPage6, name='mh-page-6'),
+    path('institut/meyoriy-hujjatlar/institut-buyruqlari',mhPage7, name='mh-page-7'),
+    path('institut/meyoriy-hujjatlar/klasifikatorlar',mhPage8,name='mh-page-8'),
     
     
+    
+    path('rektorat',rektorat,name="rektorat"),
+    path('rektorat/Rektor',rektor,name="rektor"),
+    path('rektorat/Yoshlar-masalalari',prYoshlar,name="prYoshlar"),
+    path('rektorat/Oquv-ishlari',prOquv,name="prOquv"),
+    path('rektorat/Ilmiy-ishlari',prIlmiy,name="prIlmiy"),
+    path('rektorat/Moliyaviy-ishlari',prMoliya,name="prMoliya"),
+    path('rektorat/Xalqaro-ishlari',prXalqaro,name="prXalqaro"),
     
 ]

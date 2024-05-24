@@ -153,3 +153,41 @@ def mhPage3(request):
 def mhPage4(request):
     return render(request,'institut/mh-page4.html')
 
+def mhPage5(request):
+    return render(request,'institut/mh-page5.html')
+
+def mhPage6(request):
+    return render(request,'institut/mh-page6.html')
+
+def mhPage7(request):
+    return render(request,'institut/mh-page7.html')
+
+def mhPage8(request):
+    return render(request,'institut/mh-page8.html')
+
+################################################################################################
+
+def rektorat(request):
+    return render(request, 'rektorat/rektorat.html')
+
+
+def rektor(request):
+    return render(request, 'rektorat/rektor.html')
+
+def prYoshlar(request):
+    return render(request, 'rektorat/pr-yoshlar.html')
+
+def prOquv(request):
+    return render(request, 'rektorat/pr-oquv.html')
+
+def prIlmiy(request):
+    return render(request, 'rektorat/pr-ilmiy.html')
+
+def prMoliya(request):
+    return render(request, 'rektorat/pr-moliya.html')
+
+def prXalqaro(request):
+    return render(request, 'rektorat/pr-xalqaro.html')
+
+
+################################################################################################
