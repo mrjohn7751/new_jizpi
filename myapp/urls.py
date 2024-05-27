@@ -64,10 +64,74 @@ urlpatterns = [
     
     
     path('bolimalar',bolimlar,name="bolimlar"),
+    path('bolimalar/pageB1',pageB1,name="pageB1"),
+    path('bolimalar/pageB2',pageB2,name="pageB2"),
+    path('bolimalar/pageB3',pageB3,name="pageB3"),
+    path('bolimalar/pageB4',pageB4,name="pageB4"),
+    path('bolimalar/pageB5',pageB5,name="pageB5"),
+    path('bolimalar/pageB6',pageB6,name="pageB6"),
+    path('bolimalar/pageB7',pageB7,name="pageB7"),
+    path('bolimalar/pageB8',pageB8,name="pageB8"),
+    path('bolimalar/pageB9',pageB9,name="pageB9"),
+    path('bolimalar/pageB10',pageB10,name="pageB10"),
+    path('bolimalar/pageB11',pageB11,name="pageB11"),
+    path('bolimalar/pageB12',pageB12,name="pageB12"),
+    path('bolimalar/pageB13',pageB13,name="pageB13"),
+    path('bolimalar/pageB14',pageB14,name="pageB14"),
+
     
     
     
     path('markazlar',markazlar,name="markazlar"),
+    path('markazlar/pageM1',pageM1,name="pageM1"),
+    path('markazlar/pageM2',pageM2,name="pageM2"),
+    path('markazlar/pageM3',pageM3,name="pageM3"),
+    path('markazlar/pageM4',pageM4,name="pageM4"),
+    path('markazlar/pageM5',pageM5,name="pageM5"),
+    path('markazlar/pageM6',pageM6,name="pageM6"),
+    
+    
+    
+    path('fakultetlar',fakultet,name="fakultet"),
+    path('fakultetlar/pageF1',pageF1,name="pageF1"),
+    path('fakultetlar/pageF2',pageF2,name="pageF2"),
+    path('fakultetlar/pageF3',pageF3,name="pageF3"),
+    path('fakultetlar/pageF4',pageF4,name="pageF4"),
+    path('fakultetlar/pageF5',pageF5,name="pageF5"),
+    path('fakultetlar/pageF6',pageF6,name="pageF6"),
+    
+    
+    
+    path('kafedralar',kafedra,name="kafedra"),
+    path('kafedralar/pageK1',pageK1,name="pageK1"),
+    path('kafedralar/pageK2',pageK2,name="pageK2"),
+    path('kafedralar/pageK3',pageK3,name="pageK3"),
+    path('kafedralar/pageK4',pageK4,name="pageK4"),
+    path('kafedralar/pageK5',pageK5,name="pageK5"),
+    path('kafedralar/pageK6',pageK6,name="pageK6"),
+    path('kafedralar/pageK7',pageK7,name="pageK7"),
+    path('kafedralar/pageK8',pageK8,name="pageK8"),
+    path('kafedralar/pageK9',pageK9,name="pageK9"),
+    path('kafedralar/pageK10',pageK10,name="pageK10"),
+    path('kafedralar/pageK11',pageK11,name="pageK11"),
+    path('kafedralar/pageK12',pageK12,name="pageK12"),
+    path('kafedralar/pageK13',pageK13,name="pageK13"),
+    path('kafedralar/pageK14',pageK14,name="pageK14"),
+    path('kafedralar/pageK15',pageK15,name="pageK15"),
+    path('kafedralar/pageK16',pageK16,name="pageK16"),
+    path('kafedralar/pageK17',pageK17,name="pageK17"),
+    path('kafedralar/pageK18',pageK18,name="pageK18"),
+    path('kafedralar/pageK19',pageK19,name="pageK19"),
+    path('kafedralar/pageK20',pageK20,name="pageK20"),
+    path('kafedralar/pageK21',pageK21,name="pageK21"),
+    path('kafedralar/pageK22',pageK22,name="pageK22"),
+    path('kafedralar/pageK23',pageK23,name="pageK23"),
+    path('kafedralar/pageK24',pageK24,name="pageK24"),
+    path('kafedralar/pageK25',pageK25,name="pageK25"),
+    path('kafedralar/pageK26',pageK26,name="pageK26"),
+    path('kafedralar/pageK27',pageK27,name="pageK27"),
+    path('kafedralar/pageK28',pageK28,name="pageK28"),
+    
     
     
     

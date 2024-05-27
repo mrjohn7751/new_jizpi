@@ -172,22 +172,22 @@ def rektorat(request):
 
 
 def rektor(request):
-    return render(request, 'rektorat/rektor.html')
+    return render(request, 'rektorat/rektorat/rektor.html')
 
 def prYoshlar(request):
-    return render(request, 'rektorat/pr-yoshlar.html')
+    return render(request, 'rektorat/rektorat/pr-yoshlar.html')
 
 def prOquv(request):
-    return render(request, 'rektorat/pr-oquv.html')
+    return render(request, 'rektorat/rektorat/pr-oquv.html')
 
 def prIlmiy(request):
-    return render(request, 'rektorat/pr-ilmiy.html')
+    return render(request, 'rektorat/rektorat/pr-ilmiy.html')
 
 def prMoliya(request):
-    return render(request, 'rektorat/pr-moliya.html')
+    return render(request, 'rektorat/rektorat/pr-moliya.html')
 
 def prXalqaro(request):
-    return render(request, 'rektorat/pr-xalqaro.html')
+    return render(request, 'rektorat/rektorat/pr-xalqaro.html')
 
 
 ################################################################################################
@@ -195,6 +195,47 @@ def prXalqaro(request):
 def bolimlar(request):
     return render(request, 'rektorat/bolimlar/bolimlar.html')
 
+def pageB1(request):
+    return render(request, 'rektorat/bolimlar/page-b1.html')
+
+def pageB2(request):
+    return render(request, 'rektorat/bolimlar/page-b2.html')
+
+def pageB3(request):
+    return render(request, 'rektorat/bolimlar/page-b3.html')
+
+def pageB4(request):
+    return render(request, 'rektorat/bolimlar/page-b4.html')
+
+def pageB5(request):
+    return render(request, 'rektorat/bolimlar/page-b5.html')
+
+def pageB6(request):
+    return render(request, 'rektorat/bolimlar/page-b6.html')
+
+def pageB7(request):
+    return render(request, 'rektorat/bolimlar/page-b7.html')
+
+def pageB8(request):
+    return render(request, 'rektorat/bolimlar/page-b8.html')
+
+def pageB9(request):
+    return render(request, 'rektorat/bolimlar/page-b9.html')
+
+def pageB10(request):
+    return render(request, 'rektorat/bolimlar/page-b10.html')
+
+def pageB11(request):
+    return render(request, 'rektorat/bolimlar/page-b11.html')
+
+def pageB12(request):
+    return render(request, 'rektorat/bolimlar/page-b12.html')
+
+def pageB13(request):
+    return render(request, 'rektorat/bolimlar/page-b13.html')
+
+def pageB14(request):
+    return render(request, 'rektorat/bolimlar/page-b14.html')
 
 
 
@@ -204,7 +245,146 @@ def bolimlar(request):
 def markazlar(request):
     return render(request, 'rektorat/markazlar/markaz.html')
 
+def pageM1(request):
+    return render(request, 'rektorat/markazlar/page-m1.html')
+
+
+def pageM2(request):
+    return render(request, 'rektorat/markazlar/page-m2.html')
+
+
+def pageM3(request):
+    return render(request, 'rektorat/markazlar/page-m3.html')
+
+
+def pageM4(request):
+    return render(request, 'rektorat/markazlar/page-m4.html')
+
+
+def pageM5(request):
+    return render(request, 'rektorat/markazlar/page-m5.html')
+
+def pageM6(request):
+    return render(request, 'rektorat/markazlar/page-m6.html')
 
 
 
+
+################################################################################################
+################################################################################################
+
+def fakultet(request):
+    return render(request, 'rektorat/fakultet/fakultet.html')   
+
+def pageF1(request):
+    return render(request, 'rektorat/fakultet/page-f1.html')   
+
+def pageF2(request):
+    return render(request, 'rektorat/fakultet/page-f2.html')   
+
+def pageF3(request):
+    return render(request, 'rektorat/fakultet/page-f3.html')   
+
+def pageF4(request):
+    return render(request, 'rektorat/fakultet/page-f4.html')   
+
+def pageF5(request):
+    return render(request, 'rektorat/fakultet/page-f5.html')   
+
+def pageF6(request):
+    return render(request, 'rektorat/fakultet/page-f6.html')   
+
+
+################################################################################################
+################################################################################################
+
+def kafedra(request):
+    return render(request, 'rektorat/kafedra/kafedra.html')   
+
+def pageK1(request):
+    return render(request,'rektorat/kafedra/page-k1.html')
+
+def pageK2(request):
+    return render(request,'rektorat/kafedra/page-k2.html')
+
+def pageK3(request):
+    return render(request,'rektorat/kafedra/page-k3.html')
+
+def pageK4(request):
+    return render(request,'rektorat/kafedra/page-k4.html')
+
+def pageK5(request):
+    return render(request,'rektorat/kafedra/page-k5.html')
+
+def pageK6(request):
+    return render(request,'rektorat/kafedra/page-k6.html')
+
+def pageK7(request):
+    return render(request,'rektorat/kafedra/page-k7.html')
+
+def pageK8(request):
+    return render(request,'rektorat/kafedra/page-k8.html')
+
+def pageK9(request):
+    return render(request,'rektorat/kafedra/page-k9.html')
+
+def pageK10(request):
+    return render(request,'rektorat/kafedra/page-k10.html')
+
+def pageK11(request):
+    return render(request,'rektorat/kafedra/page-k11.html')
+
+def pageK12(request):
+    return render(request,'rektorat/kafedra/page-k12.html')
+
+def pageK13(request):
+    return render(request,'rektorat/kafedra/page-k13.html')
+
+def pageK14(request):
+    return render(request,'rektorat/kafedra/page-k14.html')
+
+def pageK15(request):
+    return render(request,'rektorat/kafedra/page-k15.html')
+
+def pageK16(request):
+    return render(request,'rektorat/kafedra/page-k16.html')
+
+def pageK17(request):
+    return render(request,'rektorat/kafedra/page-k17.html')
+
+def pageK18(request):
+    return render(request,'rektorat/kafedra/page-k18.html')
+
+def pageK19(request):
+    return render(request,'rektorat/kafedra/page-k19.html')
+
+def pageK20(request):
+    return render(request,'rektorat/kafedra/page-k20.html')
+
+def pageK21(request):
+    return render(request,'rektorat/kafedra/page-k21.html')
+
+def pageK22(request):
+    return render(request,'rektorat/kafedra/page-k22.html')
+
+def pageK23(request):
+    return render(request,'rektorat/kafedra/page-k23.html')
+
+def pageK24(request):
+    return render(request,'rektorat/kafedra/page-k24.html')
+
+def pageK25(request):
+    return render(request,'rektorat/kafedra/page-k25.html')
+
+def pageK26(request):
+    return render(request,'rektorat/kafedra/page-k26.html')
+
+def pageK27(request):
+    return render(request,'rektorat/kafedra/page-k27.html')
+
+def pageK28(request):
+    return render(request,'rektorat/kafedra/page-k28.html')
+
+
+################################################################################################
 ################################################################################################
