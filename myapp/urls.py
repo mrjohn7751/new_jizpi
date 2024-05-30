@@ -134,5 +134,34 @@ urlpatterns = [
     
     
     
+    path('ilmiy-faoliyat/', ilmiyFaoliyat, name="ilmiyFaoliyat"),
+    path('ilmiy-faoliyat/pageIF1', pageIF1, name="pageIF1"),
+    path('ilmiy-faoliyat/pageIF2', pageIF2, name="pageIF2"),
+    path('ilmiy-faoliyat/pageIF3', pageIF3, name="pageIF3"),
+    path('ilmiy-faoliyat/pageIF4', pageIF4, name="pageIF4"),
+    path('ilmiy-faoliyat/pageIF5', pageIF5, name="pageIF5"),
+    path('ilmiy-faoliyat/pageIF6', pageIF6, name="pageIF6"),
+    path('ilmiy-faoliyat/pageIF7', pageIF7, name="pageIF7"),
+    path('ilmiy-faoliyat/pageIF8', pageIF8, name="pageIF8"),
+    path('ilmiy-faoliyat/pageIF9', pageIF9, name="pageIF9"),
+    path('ilmiy-faoliyat/pageIF10', pageIF10, name="pageIF10"),
+    path('ilmiy-faoliyat/pageIF11', pageIF11, name="pageIF11"),
+    path('ilmiy-faoliyat/pageIF12', pageIF12, name="pageIF12"),
+    path('ilmiy-faoliyat/pageIF13', pageIF13, name="pageIF13"),
+    path('ilmiy-faoliyat/pageIF14', pageIF14, name="pageIF14"),
+    path('ilmiy-faoliyat/pageIF15', pageIF15, name="pageIF15"),
+    path('ilmiy-faoliyat/pageIF16', pageIF16, name="pageIF16"),
+    path('ilmiy-faoliyat/pageIF17', pageIF17, name="pageIF17"),
+ 
+ 
+ 
+    path('oquv-faoliyat/', oquvFaoliyat, name="oquvFaoliyat"),
+    path('oquv-faoliyat/pageOF1', pageOF1, name="pageOF1"),
+    path('oquv-faoliyat/pageOF2', pageOF2, name="pageOF2"),
+    path('oquv-faoliyat/pageOF3', pageOF3, name="pageOF3"),
+    path('oquv-faoliyat/pageOF4', pageOF4, name="pageOF4"),
+    path('oquv-faoliyat/pageOF5', pageOF5, name="pageOF5"),
+ 
+ 
     
 ]
