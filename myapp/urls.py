@@ -134,5 +134,128 @@ urlpatterns = [
     
     
     
+    path('ilmiy-faoliyat/', ilmiyFaoliyat, name="ilmiyFaoliyat"),
+    path('ilmiy-faoliyat/pageIF1', pageIF1, name="pageIF1"),
+    path('ilmiy-faoliyat/pageIF2', pageIF2, name="pageIF2"),
+    path('ilmiy-faoliyat/pageIF3', pageIF3, name="pageIF3"),
+    path('ilmiy-faoliyat/pageIF4', pageIF4, name="pageIF4"),
+    path('ilmiy-faoliyat/pageIF5', pageIF5, name="pageIF5"),
+    path('ilmiy-faoliyat/pageIF6', pageIF6, name="pageIF6"),
+    path('ilmiy-faoliyat/pageIF7', pageIF7, name="pageIF7"),
+    path('ilmiy-faoliyat/pageIF8', pageIF8, name="pageIF8"),
+    path('ilmiy-faoliyat/pageIF9', pageIF9, name="pageIF9"),
+    path('ilmiy-faoliyat/pageIF10', pageIF10, name="pageIF10"),
+    path('ilmiy-faoliyat/pageIF11', pageIF11, name="pageIF11"),
+    path('ilmiy-faoliyat/pageIF12', pageIF12, name="pageIF12"),
+    path('ilmiy-faoliyat/pageIF13', pageIF13, name="pageIF13"),
+    path('ilmiy-faoliyat/pageIF14', pageIF14, name="pageIF14"),
+    path('ilmiy-faoliyat/pageIF15', pageIF15, name="pageIF15"),
+    path('ilmiy-faoliyat/pageIF16', pageIF16, name="pageIF16"),
+    path('ilmiy-faoliyat/pageIF17', pageIF17, name="pageIF17"),
+ 
+ 
+ 
+    path('oquv-faoliyat/', oquvFaoliyat, name="oquvFaoliyat"),
+    path('oquv-faoliyat/pageOF1', pageOF1, name="pageOF1"),
+    path('oquv-faoliyat/pageOF2', pageOF2, name="pageOF2"),
+    path('oquv-faoliyat/pageOF3', pageOF3, name="pageOF3"),
+    path('oquv-faoliyat/pageOF4', pageOF4, name="pageOF4"),
+    path('oquv-faoliyat/pageOF5', pageOF5, name="pageOF5"),
+ 
+ 
     
+    path('Xalqaro-faoliyat/', xalqaroFaoliyat, name="xalqaroFaoliyat"),
+    path('Xalqaro-faoliyat/pageXF1', pageXF1, name="pageXF1"),
+    path('Xalqaro-faoliyat/pageXF2', pageXF2, name="pageXF2"),
+    path('Xalqaro-faoliyat/pageXF3', pageXF3, name="pageXF3"),
+    path('Xalqaro-faoliyat/pageXF4', pageXF4, name="pageXF4"),
+    path('Xalqaro-faoliyat/pageXF5', pageXF5, name="pageXF5"),
+    path('Xalqaro-faoliyat/pageXF6', pageXF6, name="pageXF6"),
+    
+    
+    
+    path('Moliyaviy-faoliyat/', moliyaviyFaoliyat, name="moliyaviyFaoliyat"),
+    path('Moliyaviy-faoliyat/pageMF1', pageMF1, name="pageMF1"),
+    path('Moliyaviy-faoliyat/pageMF2', pageMF2, name="pageMF2"),
+    path('Moliyaviy-faoliyat/pageMF3', pageMF3, name="pageMF3"),
+    path('Moliyaviy-faoliyat/pageMF4', pageMF4, name="pageMF4"),
+    path('Moliyaviy-faoliyat/pageMF5', pageMF5, name="pageMF5"),
+    path('Moliyaviy-faoliyat/pageMF6', pageMF6, name="pageMF6"),
+    path('Moliyaviy-faoliyat/pageMF7', pageMF7, name="pageMF7"),
+    
+    
+    path('callCenter/', callCenter, name="callCenter"),
+    path('bakalavr/', bakalavr, name="bakalavr"),
+    path('bakalavr/qabul/pageB1', pageB1, name="pageB1"),
+    path('bakalavr/qabul/pageB2', pageB2, name="pageB2"),
+    path('bakalavr/qabul/pageB3', pageB3, name="pageB3"),
+    path('bakalavr/qabul/pageB4', pageB4, name="pageB4"),
+    path('bakalavr/qabul/pageB5', pageB5, name="pageB5"),
+    path('bakalavr/qabul/pageB6', pageB6, name="pageB6"),
+    path('bakalavr/qabul/pageB7', pageB7, name="pageB7"),
+    path('bakalavr/qabul/pageB8', pageB8, name="pageB8"),
+    
+    
+    path('magistratura/', magistr, name="magistr"),
+    path('magistratura/pageQM1', pageQM1, name="pageQM1"),
+    path('magistratura/pageQM2', pageQM2, name="pageQM2"),
+    path('magistratura/pageQM3', pageQM3, name="pageQM3"),
+    path('magistratura/pageQM4', pageQM4, name="pageQM4"),
+    path('magistratura/pageQM5', pageQM5, name="pageQM5"),
+    path('magistratura/pageQM6', pageQM6, name="pageQM6"),
+    path('magistratura/pageQM7', pageQM7, name="pageQM7"),
+    path('magistratura/pageQM8', pageQM8, name="pageQM8"),
+    path('magistratura/pageQM9', pageQM9, name="pageQM9"),
+    
+    
+    path('sirtqi-talim', sirtqi, name='sirtqi'),
+    path('sirtqi-talim/pageSirtqi1', pageSirtqi1, name='pageSirtqi1'),
+    path('sirtqi-talim/pageSirtqi2', pageSirtqi2, name='pageSirtqi2'),
+    path('sirtqi-talim/pageSirtqi3', pageSirtqi3, name='pageSirtqi3'),
+    path('sirtqi-talim/pageSirtqi4', pageSirtqi4, name='pageSirtqi4'),
+    path('sirtqi-talim/pageSirtqi5', pageSirtqi5, name='pageSirtqi5'),
+    path('sirtqi-talim/pageSirtqi6', pageSirtqi6, name='pageSirtqi6'),
+    path('sirtqi-talim/pageSirtqi7', pageSirtqi7, name='pageSirtqi7'),
+    path('sirtqi-talim/pageSirtqi8', pageSirtqi8, name='pageSirtqi8'),
+    
+    
+    path('Xorijiy-Talabalar', xorijiyTalabalar, name='xorijiyTalabalar'),
+    path('texnikumlar', texnikum, name='texnikum'),
+    
+    path('Qo\'shma-Talim-Dasturi', qoshmaTalim, name='qoshmaTalim'),
+    path('Qo\'shma-Talim-Dasturi/pageQT1', pageQT1, name='pageQT1'),
+    path('Qo\'shma-Talim-Dasturi/pageQT2', pageQT2, name='pageQT2'),
+    path('Qo\'shma-Talim-Dasturi/pageQT3', pageQT3, name='pageQT3'),
+    path('Qo\'shma-Talim-Dasturi/pageQT4', pageQT4, name='pageQT4'),
+    path('Qo\'shma-Talim-Dasturi/pageQT5', pageQT5, name='pageQT5'),
+    path('Qo\'shma-Talim-Dasturi/pageQT6', pageQT6, name='pageQT6'),
+    path('Qo\'shma-Talim-Dasturi/pageQT7', pageQT7, name='pageQT7'),
+    path('Qo\'shma-Talim-Dasturi/pageQT8', pageQT8, name='pageQT8'),
+    path('Qo\'shma-Talim-Dasturi/pageQT9', pageQT9, name='pageQT9'),
+    path('Qo\'shma-Talim-Dasturi/pageQT10', pageQT10, name='pageQT10'),
+    
+    
+    
+    
+    path('doktarantura', doktarantura, name='doktarantura'),
+    path('doktarantura/pageDOK1', pageDOK1, name='pageDOK1'),
+    path('doktarantura/pageDOK2', pageDOK2, name='pageDOK2'),
+    path('doktarantura/pageDOK3', pageDOK3, name='pageDOK3'),
+    path('doktarantura/pageDOK4', pageDOK4, name='pageDOK4'),
+    path('doktarantura/pageDOK5', pageDOK5, name='pageDOK5'),
+
+
+    path('Ikkinchi-Mutaxasislik', ikkiMutaxasislik, name='ikkiMutaxasislik'),
+    path('Ikkinchi-Mutaxasislik/pageIM1', pageIM1, name='pageIM1'),
+    path('Ikkinchi-Mutaxasislik/pageIM2', pageIM2, name='pageIM2'),
+    path('Ikkinchi-Mutaxasislik/pageIM3', pageIM3, name='pageIM3'),
+    path('Ikkinchi-Mutaxasislik/pageIM4', pageIM4, name='pageIM4'),
+    path('Ikkinchi-Mutaxasislik/pageIM5', pageIM5, name='pageIM5'),
+    path('Ikkinchi-Mutaxasislik/pageIM6', pageIM6, name='pageIM6'),
+    path('Ikkinchi-Mutaxasislik/pageIM7', pageIM7, name='pageIM7'),
+    path('Ikkinchi-Mutaxasislik/pageIM8', pageIM8, name='pageIM8'),
+    path('Ikkinchi-Mutaxasislik/pageIM9', pageIM9, name='pageIM9'),
+    path('Ikkinchi-Mutaxasislik/pageIM10', pageIM10, name='pageIM10'),
+
+
 ]

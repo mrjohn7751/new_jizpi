@@ -388,3 +388,343 @@ def pageK28(request):
 
 ################################################################################################
 ################################################################################################
+
+
+def ilmiyFaoliyat(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/ilmiy.html')
+
+def pageIF1(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if1.html')
+ 
+def pageIF2(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if2.html')
+ 
+def pageIF3(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if3.html')
+ 
+def pageIF4(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if4.html')
+ 
+def pageIF5(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if5.html')
+ 
+def pageIF6(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if6.html')
+ 
+def pageIF7(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if7.html')
+ 
+def pageIF8(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if8.html')
+ 
+def pageIF9(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if9.html')
+ 
+def pageIF10(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if10.html')
+ 
+def pageIF11(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if11.html')
+ 
+def pageIF12(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if12.html')
+ 
+def pageIF13(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if13.html')
+ 
+def pageIF14(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if14.html')
+ 
+def pageIF15(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if15.html')
+ 
+def pageIF16(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if16.html')
+    
+def pageIF17(request):
+    return render(request,'faoliyat/ilmiy-faoliyat/page-if17.html')
+ 
+    
+################################################################################################
+################################################################################################
+
+
+def oquvFaoliyat(request):
+    return render(request,'faoliyat/oquv-faoliyat/oquv.html')
+
+def pageOF1(request):
+    return render(request,'faoliyat/oquv-faoliyat/page-of1.html')
+
+def pageOF2(request):
+    return render(request,'faoliyat/oquv-faoliyat/page-of2.html')
+
+def pageOF3(request):
+    return render(request,'faoliyat/oquv-faoliyat/page-of3.html')
+
+def pageOF4(request):
+    return render(request,'faoliyat/oquv-faoliyat/page-of4.html')
+
+def pageOF5(request):
+    return render(request,'faoliyat/oquv-faoliyat/page-of5.html')
+
+
+################################################################################################
+################################################################################################
+
+
+def xalqaroFaoliyat(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/xalqaro.html')
+
+def pageXF1(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf1.html')
+
+def pageXF2(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf2.html')
+
+def pageXF3(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf3.html')
+
+def pageXF4(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf4.html')
+
+def pageXF5(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf5.html')
+
+def pageXF6(request):
+    return render(request,'faoliyat/xalqaro-faoliyat/page-xf6.html')
+
+
+################################################################################################
+################################################################################################
+
+
+def moliyaviyFaoliyat(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/moliyaviy.html')
+
+def pageMF1(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf1.html')
+
+def pageMF2(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf2.html')
+
+def pageMF3(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf3.html')
+
+def pageMF4(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf4.html')
+
+def pageMF5(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf5.html')
+
+def pageMF6(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf6.html')
+
+def pageMF7(request):
+    return render(request,'faoliyat/moliyaviy-faoliyat/page-mf7.html')
+
+
+################################################################################################
+################################################################################################
+
+
+def callCenter(request):
+    return render(request,'qabul/call-center.html')
+
+def bakalavr(request):
+    return render(request,'qabul/bakalavr/bakalavr.html')
+
+def pageB1(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB2(request):
+    return render(request,'qabul/bakalavr/page-b2.html')
+
+def pageB3(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB4(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB5(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB6(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB7(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+def pageB8(request):
+    return render(request,'qabul/bakalavr/page-b1.html')
+
+################################################################################################
+################################################################################################
+
+def magistr(request):
+    return render(request,'qabul/magistr/magistr.html')
+
+def pageQM1(request):
+    return render(request,'qabul/magistr/page-m1.html')
+
+def pageQM2(request):
+    return render(request,'qabul/magistr/page-m2.html')
+
+def pageQM3(request):
+    return render(request,'qabul/magistr/page-m3.html')
+
+def pageQM4(request):
+    return render(request,'qabul/magistr/page-m4.html')
+
+def pageQM5(request):
+    return render(request,'qabul/magistr/page-m5.html')
+
+def pageQM6(request):
+    return render(request,'qabul/magistr/page-m6.html')
+
+def pageQM7(request):
+    return render(request,'qabul/magistr/page-m7.html')
+
+def pageQM8(request):
+    return render(request,'qabul/magistr/page-m8.html')
+
+def pageQM9(request):
+    return render(request,'qabul/magistr/page-m9.html')
+
+################################################################################################
+################################################################################################
+
+def sirtqi(request):
+    return render(request,'qabul/sirtqi/sirtqi.html')
+
+def pageSirtqi1(request):
+    return render(request,'qabul/sirtqi/page-sirtqi1.html')
+
+def pageSirtqi2(request):
+    return render(request,'qabul/sirtqi/page-sirtqi2.html')
+
+def pageSirtqi3(request):
+    return render(request,'qabul/sirtqi/page-sirtqi3.html')
+
+def pageSirtqi4(request):
+    return render(request,'qabul/sirtqi/page-sirtqi4.html')
+
+def pageSirtqi5(request):
+    return render(request,'qabul/sirtqi/page-sirtqi5.html')
+
+def pageSirtqi6(request):
+    return render(request,'qabul/sirtqi/page-sirtqi6.html')
+
+def pageSirtqi7(request):
+    return render(request,'qabul/sirtqi/page-sirtqi7.html')
+
+def pageSirtqi8(request):
+    return render(request,'qabul/sirtqi/page-sirtqi8.html')
+
+
+
+################################################################################################
+def xorijiyTalabalar(request):
+    return render(request,'qabul/xorijiy-talabalar.html')
+################################################################################################
+
+
+
+def doktarantura(request):
+    return render(request,'qabul/dokt/dokt.html')
+        
+def pageDOK1(request):
+    return render(request,'qabul/dokt/page-dok1.html')
+        
+def pageDOK2(request):
+    return render(request,'qabul/dokt/page-dok2.html')
+        
+def pageDOK3(request):
+    return render(request,'qabul/dokt/page-dok3.html')
+        
+def pageDOK4(request):
+    return render(request,'qabul/dokt/page-dok4.html')
+        
+def pageDOK5(request):
+    return render(request,'qabul/dokt/page-dok5.html')
+        
+        
+################################################################################################
+################################################################################################
+
+def qoshmaTalim(request):
+    return render(request,'qabul/qoshmaTalim/qtalim.html')
+
+def pageQT1(request):
+    return render(request,'qabul/qoshmaTalim/page-qt1.html')
+
+def pageQT2(request):
+    return render(request,'qabul/qoshmaTalim/page-qt2.html')
+
+def pageQT3(request):
+    return render(request,'qabul/qoshmaTalim/page-qt3.html')
+
+def pageQT4(request):
+    return render(request,'qabul/qoshmaTalim/page-qt4.html')
+
+def pageQT5(request):
+    return render(request,'qabul/qoshmaTalim/page-qt5.html')
+
+def pageQT6(request):
+    return render(request,'qabul/qoshmaTalim/page-qt6.html')
+
+def pageQT7(request):
+    return render(request,'qabul/qoshmaTalim/page-qt7.html')
+
+def pageQT8(request):
+    return render(request,'qabul/qoshmaTalim/page-qt8.html')
+
+def pageQT9(request):
+    return render(request,'qabul/qoshmaTalim/page-qt9.html')
+
+def pageQT10(request):
+    return render(request,'qabul/qoshmaTalim/page-qt10.html')
+
+        
+################################################################################################
+def texnikum(request):
+    return render(request,'qabul/texnikum.html')
+################################################################################################
+
+
+def ikkiMutaxasislik(request):
+    return render(request,'qabul/im/im.html')
+
+def pageIM1(request):
+    return render(request,'qabul/im/page-im1.html')
+
+def pageIM2(request):
+    return render(request,'qabul/im/page-im2.html')
+
+def pageIM3(request):
+    return render(request,'qabul/im/page-im3.html')
+
+def pageIM4(request):
+    return render(request,'qabul/im/page-im4.html')
+
+def pageIM5(request):
+    return render(request,'qabul/im/page-im5.html')
+
+def pageIM6(request):
+    return render(request,'qabul/im/page-im6.html')
+
+def pageIM7(request):
+    return render(request,'qabul/im/page-im7.html')
+
+def pageIM8(request):
+    return render(request,'qabul/im/page-im8.html')
+
+def pageIM9(request):
+    return render(request,'qabul/im/page-im9.html')
+
+def pageIM10(request):
+    return render(request,'qabul/im/page-im10.html')
+
+
+
+
+

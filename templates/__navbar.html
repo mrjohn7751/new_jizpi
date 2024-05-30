@@ -66,10 +66,10 @@
             <div class="dropdown">
                 <a href="#" class="navbar_nav_a">Faoliyat</a>
                 <ul class="dropdown_ul">
-                    <li class="dropdown_li"><a href="#">Ilmiy Faoliyat</a></li>
-                    <li class="dropdown_li"><a href="#">O'quv Faoliyat</a></li>
-                    <li class="dropdown_li"><a href="#">Xalqaro Faoliyat</a></li>
-                    <li class="dropdown_li"><a href="#">Moliyaviy Faoliyat</a></li>
+                    <li class="dropdown_li"><a href="{% url "ilmiyFaoliyat" %}">Ilmiy Faoliyat</a></li>
+                    <li class="dropdown_li"><a href="{% url "oquvFaoliyat" %}">O'quv Faoliyat</a></li>
+                    <li class="dropdown_li"><a href="{% url "xalqaroFaoliyat" %}">Xalqaro Faoliyat</a></li>
+                    <li class="dropdown_li"><a href="{% url "moliyaviyFaoliyat" %}">Moliyaviy Faoliyat</a></li>
                     
                 </ul>
             </div>
@@ -77,15 +77,15 @@
             <div class="dropdown">
                 <a href="#" class="navbar_nav_a">Qabul-2024</a>
                 <ul class="dropdown_ul">
-                  <li class="dropdown_li"><a href="#">CALL-CENTER</a></li>
-                  <li class="dropdown_li"><a href="#">Bakalavr</a></li>
-                  <li class="dropdown_li"><a href="#">Magistratura</a></li>
-                  <li class="dropdown_li"><a href="#">Sirtqi Ta'lim</a></li>
-                  <li class="dropdown_li"><a href="#">Doktorantura</a></li>
-                  <li class="dropdown_li"><a href="#">Xorijiy Fuqarolar</a></li>
-                  <li class="dropdown_li"><a href="#">Qoshma Ta'lim dasturi</a></li>
-                  <li class="dropdown_li"><a href="#">2 - Mutaxassislik</a></li>
-                  <li class="dropdown_li"><a href="#">Texnikumlar</a></li>
+                  <li class="dropdown_li"><a href="{% url "callCenter" %}">CALL-CENTER</a></li>
+                  <li class="dropdown_li"><a href="{% url "bakalavr" %}">Bakalavr</a></li>
+                  <li class="dropdown_li"><a href="{% url "magistr" %}">Magistratura</a></li>
+                  <li class="dropdown_li"><a href="{% url "sirtqi" %}">Sirtqi Ta'lim</a></li>
+                  <li class="dropdown_li"><a href="{% url "doktarantura" %}">Doktorantura</a></li>
+                  <li class="dropdown_li"><a href="{% url "xorijiyTalabalar" %}">Xorijiy Fuqarolar</a></li>
+                  <li class="dropdown_li"><a href="{% url "qoshmaTalim" %}">Qoshma Ta'lim dasturi</a></li>
+                  <li class="dropdown_li"><a href="{% url "ikkiMutaxasislik" %}">2 - Mutaxassislik</a></li>
+                  <li class="dropdown_li"><a href="{% url "texnikum" %}">Texnikumlar</a></li>
                 </ul>
             </div>
               
