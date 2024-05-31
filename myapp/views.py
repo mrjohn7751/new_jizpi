@@ -533,28 +533,28 @@ def callCenter(request):
 def bakalavr(request):
     return render(request,'qabul/bakalavr/bakalavr.html')
 
-def pageB1(request):
+def pageBak1(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB2(request):
+def pageBak2(request):
     return render(request,'qabul/bakalavr/page-b2.html')
 
-def pageB3(request):
+def pageBak3(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB4(request):
+def pageBak4(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB5(request):
+def pageBak5(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB6(request):
+def pageBak6(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB7(request):
+def pageBak7(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
-def pageB8(request):
+def pageBak8(request):
     return render(request,'qabul/bakalavr/page-b1.html')
 
 ################################################################################################
