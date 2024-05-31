@@ -725,6 +725,126 @@ def pageIM10(request):
     return render(request,'qabul/im/page-im10.html')
 
 
+################################################################################################
+################################################################################################
+
+def tB(request):
+    return render(request,'talabalar/bakalavr/bakalavr.html')
+
+def tBp1(request):
+    return render(request,'talabalar/bakalavr/page-b1.html')
+
+def tBp2(request):
+    return render(request,'talabalar/bakalavr/page-b2.html')
+
+def tBp3(request):
+    return render(request,'talabalar/bakalavr/page-b3.html')
+
+def tBp4(request):
+    return render(request,'talabalar/bakalavr/page-b4.html')
+
+def tBp5(request):
+    return render(request,'talabalar/bakalavr/page-b5.html')
+
+def tBp6(request):
+    return render(request,'talabalar/bakalavr/page-b6.html')
+
+def tBp7(request):
+    return render(request,'talabalar/bakalavr/page-b7.html')
+
+def tBp8(request):
+    return render(request,'talabalar/bakalavr/page-b8.html')
+
+def tBp9(request):
+    return render(request,'talabalar/bakalavr/page-b9.html')
+
+def tBp10(request):
+    return render(request,'talabalar/bakalavr/page-b10.html')
 
 
 
+################################################################################################
+################################################################################################
+
+
+def tM(request):
+    return render(request,'talabalar/magistr/_tm.html')
+
+def tMp1(request):
+    return render(request,'talabalar/magistr/page-m1.html')
+
+def tMp2(request):
+    return render(request,'talabalar/magistr/page-m2.html')
+
+def tMp3(request):
+    return render(request,'talabalar/magistr/page-m3.html')
+
+def tMp4(request):
+    return render(request,'talabalar/magistr/page-m4.html')
+
+def tMp5(request):
+    return render(request,'talabalar/magistr/page-m5.html')
+
+def tMp6(request):
+    return render(request,'talabalar/magistr/page-m6.html')
+
+def tMp7(request):
+    return render(request,'talabalar/magistr/page-m7.html')
+
+def tMp8(request):
+    return render(request,'talabalar/magistr/page-m8.html')
+
+def tMp9(request):
+    return render(request,'talabalar/magistr/page-m9.html')
+
+
+################################################################################################
+def sirtqiT(request):
+    return render(request,'talabalar/sirtqiT.html')
+################################################################################################
+
+def xt(request):
+    return render(request,'talabalar/xt/xt.html')
+
+def xtp1(request):
+    return render(request,'talabalar/xt/page-xt1.html')
+
+def xtp2(request):
+    return render(request,'talabalar/xt/page-xt2.html')
+
+def xtp3(request):
+    return render(request,'talabalar/xt/page-xt3.html')
+
+def xtp4(request):
+    return render(request,'talabalar/xt/page-xt4.html')
+
+def xtp5(request):
+    return render(request,'talabalar/xt/page-xt5.html')
+
+def xtp6(request):
+    return render(request,'talabalar/xt/page-xt6.html')
+
+################################################################################################
+################################################################################################
+
+def qt(request):
+    return render(request,'talabalar/qt/qt.html')
+
+
+def qtp1(request):
+    return render(request,'talabalar/qt/page-qt1.html')
+
+def qtp2(request):
+    return render(request,'talabalar/qt/page-qt2.html')
+
+def qtp3(request):
+    return render(request,'talabalar/qt/page-qt3.html')
+
+def qtp4(request):
+    return render(request,'talabalar/qt/page-qt4.html')
+
+def qtp5(request):
+    return render(request,'talabalar/qt/page-qt5.html')
+
+def qtp6(request):
+    return render(request,'talabalar/qt/page-qt6.html')

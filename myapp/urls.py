@@ -258,4 +258,50 @@ urlpatterns = [
     path('Ikkinchi-Mutaxasislik/pageIM10', pageIM10, name='pageIM10'),
 
 
+
+    path('talabalar/bakalavr', tB, name='tB'),
+    path('talabalar/bakalavr/tBp1', tBp1, name='tBp1'),
+    path('talabalar/bakalavr/tBp2', tBp2, name='tBp2'),
+    path('talabalar/bakalavr/tBp3', tBp3, name='tBp3'),
+    path('talabalar/bakalavr/tBp4', tBp4, name='tBp4'),
+    path('talabalar/bakalavr/tBp5', tBp5, name='tBp5'),
+    path('talabalar/bakalavr/tBp6', tBp6, name='tBp6'),
+    path('talabalar/bakalavr/tBp7', tBp7, name='tBp7'),
+    path('talabalar/bakalavr/tBp8', tBp8, name='tBp8'),
+    path('talabalar/bakalavr/tBp9', tBp9, name='tBp9'),
+    path('talabalar/bakalavr/tBp10', tBp10, name='tBp10'),
+
+
+    path('talabalar/Magistratura', tM, name='tM'),
+    path('talabalar/Magistratura/tMp1', tMp1, name='tMp1'),
+    path('talabalar/Magistratura/tMp2', tMp2, name='tMp2'),
+    path('talabalar/Magistratura/tMp3', tMp3, name='tMp3'),
+    path('talabalar/Magistratura/tMp4', tMp4, name='tMp4'),
+    path('talabalar/Magistratura/tMp5', tMp5, name='tMp5'),
+    path('talabalar/Magistratura/tMp6', tMp6, name='tMp6'),
+    path('talabalar/Magistratura/tMp7', tMp7, name='tMp7'),
+    path('talabalar/Magistratura/tMp8', tMp8, name='tMp8'),
+    path('talabalar/Magistratura/tMp9', tMp9, name='tMp9'),
+
+
+    path('talabalar/sirtqi-talim', sirtqiT, name='sirtqiT'),
+    
+    path('talabalar/Xorijiy-talabalar', xt, name='xt'),
+    path('talabalar/Xorijiy-talabalar/xtp1', xtp1, name='xtp1'),
+    path('talabalar/Xorijiy-talabalar/xtp2', xtp2, name='xtp2'),
+    path('talabalar/Xorijiy-talabalar/xtp3', xtp3, name='xtp3'),
+    path('talabalar/Xorijiy-talabalar/xtp4', xtp4, name='xtp4'),
+    path('talabalar/Xorijiy-talabalar/xtp5', xtp5, name='xtp5'),
+    path('talabalar/Xorijiy-talabalar/xtp6', xtp6, name='xtp6'),
+
+    
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash', qt, name='qt'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp1', qtp1, name='qtp1'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp2', qtp2, name='qtp2'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp3', qtp3, name='qtp3'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp4', qtp4, name='qtp4'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp5', qtp5, name='qtp5'),
+    path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp6', qtp6, name='qtp6'),
+    
+    
 ]
