@@ -15,7 +15,10 @@
     width: 770px !important;
     object-fit: cover;
   }
-  
+  .bak-nizom{
+    text-decoration: none !important;
+    background-color: none !important;
+  }
 
 
 

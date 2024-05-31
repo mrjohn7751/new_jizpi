@@ -186,14 +186,14 @@ urlpatterns = [
     
     path('callCenter/', callCenter, name="callCenter"),
     path('bakalavr/', bakalavr, name="bakalavr"),
-    path('bakalavr/qabul/pageB1', pageBak1, name="pageBak1"),
-    path('bakalavr/qabul/pageB2', pageBak2, name="pageBak2"),
-    path('bakalavr/qabul/pageB3', pageBak3, name="pageBak3"),
-    path('bakalavr/qabul/pageB4', pageBak4, name="pageBak4"),
-    path('bakalavr/qabul/pageB5', pageBak5, name="pageBak5"),
-    path('bakalavr/qabul/pageB6', pageBak6, name="pageBak6"),
-    path('bakalavr/qabul/pageB7', pageBak7, name="pageBak7"),
-    path('bakalavr/qabul/pageB8', pageBak8, name="pageBak8"),
+    path('bakalavr/qabul/pageBak1', pageBak1, name="pageBak1"),
+    path('bakalavr/qabul/pageBak2', pageBak2, name="pageBak2"),
+    path('bakalavr/qabul/pageBak3', pageBak3, name="pageBak3"),
+    path('bakalavr/qabul/pageBak4', pageBak4, name="pageBak4"),
+    path('bakalavr/qabul/pageBak5', pageBak5, name="pageBak5"),
+    path('bakalavr/qabul/pageBak6', pageBak6, name="pageBak6"),
+    path('bakalavr/qabul/pageBak7', pageBak7, name="pageBak7"),
+    path('bakalavr/qabul/pageBak8', pageBak8, name="pageBak8"),
     
     
     path('magistratura/', magistr, name="magistr"),

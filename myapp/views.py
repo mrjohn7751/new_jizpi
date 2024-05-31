@@ -540,22 +540,22 @@ def pageBak2(request):
     return render(request,'qabul/bakalavr/page-b2.html')
 
 def pageBak3(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b3.html')
 
 def pageBak4(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b4.html')
 
 def pageBak5(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b5.html')
 
 def pageBak6(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b6.html')
 
 def pageBak7(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b7.html')
 
 def pageBak8(request):
-    return render(request,'qabul/bakalavr/page-b1.html')
+    return render(request,'qabul/bakalavr/page-b8.html')
 
 ################################################################################################
 ################################################################################################
