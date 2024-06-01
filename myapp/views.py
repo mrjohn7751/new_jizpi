@@ -848,3 +848,14 @@ def qtp5(request):
 
 def qtp6(request):
     return render(request,'talabalar/qt/page-qt6.html')
+
+
+def aloqa(request):
+    return render(request,'aloqa/aloqa.html')
+
+def bayroq(request):
+    return render(request,'aloqa/bayroq.html')
+
+def gerb(request):
+    return render(request,'aloqa/gerb.html')
+
