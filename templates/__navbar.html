@@ -3,13 +3,13 @@
     <div class="container">
         <div class="cont-inf">
             <div class="cont-inf-left">
-                <a href="#"><img width="30" height="20" src="{% static "/Photos/icons/flag.png" %}" alt=""></a><p>|</p>
-                <a href="#"><img width="20" height="20" src="{% static "/Photos/icons/gerp.png" %}" alt=""></a><p>|</p>
+                <a href="{% url "bayroq" %}"><img width="30" height="20" src="{% static "/Photos/icons/flag.png" %}" alt=""></a><p>|</p>
+                <a href="{% url "gerb" %}"><img width="20" height="20" src="{% static "/Photos/icons/gerp.png" %}" alt=""></a><p>|</p>
                 <a href="#"><img src="{% static "/Photos/svg/music.svg" %}" alt=""></a><p>|</p>
                 <a href="#"><img src="{% static "/Photos/svg/lan.svg" %}" alt=""></a><p>|</p>
                 <a href="#"><img src="{% static "/Photos/svg/eays.svg" %}" alt=""></a><p>|</p>
-                <a href="#"><img src="{% static "/Photos/svg/email.svg" %}" alt=""></a><p>|</p>
-                <a href="#"><img src="{% static "/Photos/svg/cloud.svg" %}" alt=""></a><p>|</p>
+                <a href="https://jizpi.uz/webmail/"><img src="{% static "/Photos/svg/email.svg" %}" alt=""></a><p>|</p>
+                <a href="https://obhavo.uz/jizzakh"><img src="{% static "/Photos/svg/cloud.svg" %}" alt=""></a><p>|</p>
             </div>
             <div class="cont-inf-right">
                 <img src="{% static "Photos/svg/locked.svg" %}" alt="">
@@ -102,11 +102,11 @@
               
             
             <div class="dropdown">
-                <a href="#" class="navbar_nav_a">Aloqa</a>
+                <a href="{% url "aloqa" %}" class="navbar_nav_a">Aloqa</a>
             </div>
             
             <div class="dropdown">
-                <a href="#" class="navbar_nav_a">Interaktiv xizmatmatlar</a>
+                <a href="http://hnt.jizpi.uz:8080/" class="navbar_nav_a">Interaktiv xizmatmatlar</a>
             </div>
               
       </div>
