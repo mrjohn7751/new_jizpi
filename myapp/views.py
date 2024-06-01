@@ -847,4 +847,4 @@ def qtp5(request):
     return render(request,'talabalar/qt/page-xt5.html')
 
 def qtp6(request):
-    return render(request,'talabalar/qt/page-xt6.html')
+    return render(request,'talabalar/qt/page-qt6.html')

@@ -27,9 +27,25 @@
 
   /* ############################################################################## */
   /* ############################################################################## */
+  /* ############################################################################## */
   
   
   @media only screen and (max-width: 1200px) {
+    .elonlar_blocki {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+    .elonlar_blocki .card{
+      flex-wrap: wrap;
+      margin: 10px !important;
+      border-radius: 15px !important;
+
+    }
+    .elonlar_blocki .card img{
+      border-radius: none !important;
+      width: 100% !important;
+    }
+   
     .close{
       display: block !important;
       cursor: pointer;
@@ -82,12 +98,69 @@
   
     
   }
-  
+  @media only screen and (max-width: 992px) {
+ 
+    .cards .user-card .left img{
+      width: 200px !important;
+    }
+    .cards .user-card .right h2{
+      font-size: 22px !important;
+    }
+    .cards .user-card .right p{
+      font-size: 25px !important;
+    }
+
+
+    .block_left{
+      display: none !important;
+    }
+    .block_right{
+      width: 100% !important;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .elonlar_blocki {
+      display: flex !important;
+      flex-wrap: wrap;
+      width: 100% !important;
+      margin: auto !important;
+    }
+    .elonlar_blocki .card{
+      width: 400px !important;
+      flex-wrap: wrap !important;
+      margin: 10px !important;
+      border-radius: 15px !important;
+
+    }
+    .elonlar_blocki .card img{
+      border-radius: none !important;
+      width: 100% !important;
+    }
+    .block_left{
+      display: none !important;
+    }
+    .block_right{
+      width: 100% !important;
+    }
+
+    .respons_footer{
+      margin: 0 70px !important;
+    }
+
+  }
+
+
+
+
+  /* ############################################################################## */
+  /* ############################################################################## */
+  /* ############################################################################## */
+
+
   .menu, .close{
     display: none;
   }
   
-  /* ############################################################################## */
   
   .header_new{
     display: flex !important;
@@ -502,8 +575,8 @@
   }
   .elonlar_blocki .card{
     position: relative;
-    width: 270px !important;
-    height: 430px;
+    width: 270px;
+    height: 390px;
     transition: all .2s;
   }
   .elonlar_blocki .card:hover{
@@ -514,7 +587,7 @@
   .elonlar_blocki .card img{
     height: 200px;
   }
-  .elonlar_blocki .card h4,.elonlar_blocki .card p{
+  .elonlar_blocki .card h5,.elonlar_blocki .card p{
     text-align: center;
     margin: 5px 3px;
     color: #06203a;
@@ -560,7 +633,7 @@
     /* background-color: #06203a; */
     margin-top: 10px;
     padding: 50px 0;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Photos/statistika.jpg)  !important;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Photos/icons/photo_2024-06-01_06-35-27.jpg)  !important;
     background-attachment:fixed !important ;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -589,7 +662,7 @@
     /* border-radius: 40px; */
     text-align: center;  
     margin: 10px;
-    color: #585858;
+    color: #fff;
     transition: all .3s;
   }
   
@@ -674,7 +747,7 @@
   .col2 p span{
     margin: 0px ;
   }
-  .col2 .map iframe{
+   .map iframe{
     width: 370px;
     height: 250px;
   }

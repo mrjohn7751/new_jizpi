@@ -304,4 +304,8 @@ urlpatterns = [
     path('talabalar/oqishni-kochirish-va-qayta-tiklash/qtp6', qtp6, name='qtp6'),
     
     
+    path('aloqa', aloqa, name='aloqa'),
+    path('bayroq', bayroq, name='bayroq'),
+    path('gerb', gerb, name='gerb'),
+    
 ]

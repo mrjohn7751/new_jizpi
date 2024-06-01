@@ -47,10 +47,10 @@
                 {% if forloop.counter <= 4 %}
                     <div class="card">
                         <img src="{{ article.img.url }}" alt="">
-                        <h4>{{ article.title|truncatewords:4 }}</h4>
+                        <h5>{{ article.title|truncatewords:4 }}</h5>
                         <p>{{ article.body|truncatewords:10 }}</p>
                         <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
-                        <span>{{ article.created_at }}</span>
+                        {% comment %} <span>{{ article.created_at }}</span> {% endcomment %}
                     </div>
                 {% endif %}
             {% endfor %}              
@@ -77,10 +77,10 @@
                 {% if forloop.counter <= 4 %}
                     <div class="card">
                         <img src="{{ article.img.url }}" alt="">
-                        <h4>{{ article.title|truncatewords:4 }}</h4>
+                        <h5>{{ article.title|truncatewords:4 }}</h5>
                         <p>{{ article.body|truncatewords:10 }}</p>
                         <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
-                        <span>{{ article.created_at }}</span>
+                        {% comment %} <span>{{ article.created_at }}</span> {% endcomment %}
                     </div>
                 {% endif %}
             {% endfor %}              
@@ -122,28 +122,28 @@
                         </a>
                         
                         <a  href="https://moodle.jizpi.uz/" class="card item" >
-                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <div class="box"><img src="{% static "Photos/icons/image-modle.png" %}"></div>
                             <span class="box-line"></span>
                             <span class="box-line-radius"></span>
                             <h6>Modle</h6>
                         </a>
                         
                         <a  href="http://jurnal.jizpi.uz/" class="card item" >
-                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <div class="box"><img src="{% static "Photos/icons/image-ej.png" %}"></div>
                             <span class="box-line"></span>
                             <span class="box-line-radius"></span>
                             <h6>Online Jurnal</h6>
                         </a>
                         
                         <a  href="https://lib.jizpi.uz" class="card item" >
-                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                            <div class="box"><img src="{% static "Photos/icons/image-lib.png" %}"></div>
                             <span class="box-line"></span>
                             <span class="box-line-radius"></span>
                             <h6>Kutubxona</h6>
                         </a>
                         
-                        <a  href="https://hnt.jizpi.uz:8080" class="card item" >
-                            <div class="box"><img src="{% static "Photos/svg/hiwi.svg" %}"></div>
+                        <a  href="http://hnt.jizpi.uz:8080/" class="card item" >
+                            <div class="box"><img src="{% static "Photos/icons/image-dj.png" %}"></div>
                             <span class="box-line"></span>
                             <span class="box-line-radius"></span>
                             <h6>Jizpi Aborot Tizimi</h6>
@@ -243,17 +243,17 @@
                 <div class="kursatgich">
                     <h1>O'quv Faoliyat</h1>
                     <ul>
-                        <li><h1>35+</h1> <img src="{% static "Photos/icons/professor.png" %}">Professorlar</li>
-                        <li><h1>450+</h1> <img src="{% static "Photos/icons/teacher1.png" %}">O‘qituvchilar</li>
-                        <li><h1>260+</h1> <img src="{% static "Photos/icons/magistr.png" %}">Magistrlar </li>
+                        <li><h1>550+</h1> <img src="{% static "Photos/icons/professor.png" %}">O'qituvchilar</li>
+                        <li><h1>9700+</h1> <img src="{% static "Photos/icons/teacher1.png" %}">Talabalar</li>
+                        <li><h1>245+</h1> <img src="{% static "Photos/icons/magistr.png" %}">Hamkor OTMlar </li>
                         <li><h1>260+</h1> <img src="{% static "Photos/icons/qoshma_talim.png" %}">Qo‘shma ta’lim talabalari</li>
                     </ul>
-                    <ul>
+                    {% comment %} <ul>
                         <li><h1>100+</h1> <img src="{% static "Photos/icons/teacher.png" %}">Dotsent</li>
                         <li><h1>6390+</h1> <img src="{% static "Photos/icons/talaba.png" %}">Bakalavrlar</li>
                         <li><h1>2880+</h1> <img src="{% static "Photos/icons/sirtqi.png" %}">Sirqi talabalar</li>
                         <li><h1>10+</h1> <img src="{% static "Photos/icons/talaba.png" %}">Xorijiy talabalar</li>
-                    </ul>
+                    </ul> {% endcomment %}
                 </div>
             </div>
         </div>
