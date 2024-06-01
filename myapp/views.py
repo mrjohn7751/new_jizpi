@@ -832,19 +832,19 @@ def qt(request):
 
 
 def qtp1(request):
-    return render(request,'talabalar/qt/page-qt1.html')
+    return render(request,'talabalar/qt/page-xt1.html')
 
 def qtp2(request):
-    return render(request,'talabalar/qt/page-qt2.html')
+    return render(request,'talabalar/qt/page-xt2.html')
 
 def qtp3(request):
-    return render(request,'talabalar/qt/page-qt3.html')
+    return render(request,'talabalar/qt/page-xt3.html')
 
 def qtp4(request):
-    return render(request,'talabalar/qt/page-qt4.html')
+    return render(request,'talabalar/qt/page-xt4.html')
 
 def qtp5(request):
-    return render(request,'talabalar/qt/page-qt5.html')
+    return render(request,'talabalar/qt/page-xt5.html')
 
 def qtp6(request):
-    return render(request,'talabalar/qt/page-qt6.html')
+    return render(request,'talabalar/qt/page-xt6.html')
