@@ -307,5 +307,14 @@ urlpatterns = [
     path('aloqa', aloqa, name='aloqa'),
     path('bayroq', bayroq, name='bayroq'),
     path('gerb', gerb, name='gerb'),
+    path('login', login_user, name='login'),
+    path('logout/', logout_user, name='logout_user'),
+    path('home', home, name='home'),
+    path('home/create_elon/', create_article_elon, name='create_article_elon'),
+    path('home/create_news/', create_article_news, name='create_article_news'),
+    
+    # path('home/<int:pk>/', Postdetail, name='detail'),
+    
+    
     
 ]

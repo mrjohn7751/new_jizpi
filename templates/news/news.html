@@ -20,7 +20,6 @@
                     <h4>{{ article.title|truncatewords:4 }}</h4>
                     <p>{{ article.body|truncatewords:10 }}</p>
                     <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
-                    <span>{{ article.created_at }}</span>
                 </div>
             {% endfor %}
                       

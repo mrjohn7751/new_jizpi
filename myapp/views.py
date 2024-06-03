@@ -1,7 +1,70 @@
-from django.shortcuts import render
+from urllib import request
+from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login, logout
+from django.views import generic
+from .forms import ArticleElonForm, ArticleNewsForm
 from .models import *
 
 # Create your views here.
+
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST['login']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            return redirect('login')
+    else:
+        return render(request,'users/login.html')
+        
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('index')  
+
+
+
+
+def home(request):
+    Article_news = ArticleNews.objects.all()
+    Article_elon = ArticleElon.objects.all()
+    
+    context = {
+        'Article_news':Article_news,
+        'Article_elon':Article_elon,
+    }
+    return render(request,'users/home.html',context)
+
+
+def create_article_elon(request):
+    if request.method == 'POST':
+        form = ArticleElonForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')  # yoki kerakli URL
+    else:
+        form = ArticleElonForm()
+    return render(request, 'users/create_article_elon.html', {'form': form})
+
+
+def create_article_news(request):
+    if request.method == 'POST':
+        form = ArticleNewsForm(request.POST, request.FILES)
+        if form.is_valid():
+            article_news = form.save(commit=False)
+            # Category ma'lumotini olish va "category" maydonini to'ldirish
+            category_id = request.POST.get('category_id')  # Example: You need to get the category id from the form
+            article_news.category_id = category_id
+            article_news.save()
+            return redirect('home')  # yoki kerakli URL
+    else:
+        form = ArticleNewsForm()
+    return render(request, 'users/create_article_news.html', {'form': form})
 
 def index(request):
     ekranImg = ekranImages.objects.all()
@@ -862,3 +925,5 @@ def bayroq(request):
 def gerb(request):
     return render(request,'aloqa/gerb.html')
 
+################################################################################################
+################################################################################################
