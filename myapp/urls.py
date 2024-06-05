@@ -312,8 +312,12 @@ urlpatterns = [
     path('home', home, name='home'),
     path('home/create_elon/', create_article_elon, name='create_article_elon'),
     path('home/create_news/', create_article_news, name='create_article_news'),
+    path('home/delate/<int:pk>/', delete_article_news, name='delete_article_news'),
+    path('home/delete/<int:pk>/', delete_article_elon, name='delete_article_elon'),
+    path('home/update_news/<int:pk>/', update_article_news, name='update_article_news'),
+    path('home/update_elon/<int:pk>/', update_article_elon, name='update_article_elon'),
     
-    # path('home/<int:pk>/', Postdetail, name='detail'),
+    
     
     
     

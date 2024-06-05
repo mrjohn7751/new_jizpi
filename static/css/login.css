@@ -2,9 +2,8 @@
 
 body{
     height: 100vh;
-    overflow: hidden;
     font-family: "Poppins";
-  background: #0e2941 !important;
+    background: #0e2941 !important;
 }
 .login-page {
   width: 400px;
@@ -65,6 +64,11 @@ body{
 .form .register-form {
   display: none;
 }
+
+label{
+  color: aqua !important;
+}
+
 
 /* ########################################################################################## */
 /* ########################################################################################## */
