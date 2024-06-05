@@ -13,11 +13,11 @@
 
       <div class="nav-news mt-4">
        
-          <div class="elonlar_blocki row">
+          <div class="elonlar_blocki">
             {% for article in Article_elon %}
                 <div class="card mb-3">
                     <img src="{{ article.img.url }}">
-                    <h4>{{ article.title|truncatewords:4 }}</h4>
+                    <h5>{{ article.title|truncatewords:4 }}</h5>
                     <p>{{ article.body|truncatewords:10 }}</p>
                     <a href="{{ article.get_absolute_url }}" class="btn">Batafsil</a>
                 </div>

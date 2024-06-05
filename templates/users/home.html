@@ -11,38 +11,8 @@
 <body>
     <div class="container">
         
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="{% url "home" %}">Admin</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url "index" %}">JizPI Sayti</a>
-                  </li>
-                
-                
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bo'limlar</a>
-                    
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{% url "create_article_news" %}">Yangilik qo'shish</a></li>
-                      <li><a class="dropdown-item" href="{% url "create_article_elon" %}">Elon qo'shish</a></li>
-                    </ul>
-                  </li>
-                
-                 
-                </ul>
-                <form class="d-flex" role="search">
-                  
-                    <a href="{% url 'logout_user' %}" class="btn btn-outline-danger">Chiqish</a>
-                  
-                </form>
-              </div>
-            </div>
-          </nav>
+      {% include "users/__admin-navbar.html" %} 
+        
 
           <div class="text-h2">
             <h2>Kiritilgan Yangiliklar</h2>
@@ -56,8 +26,8 @@
                         <h5 class="card-title">{{ post.title|truncatewords:10 }}</h5>
                         <p class="card-text">{{ post.body|truncatewords:10}}</p>
                       <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Batafsil Ko'rish</a>
-                      <a href="" class="btn btn-success">Taxrirlash</a>
-                      <a href="{{ post.get_absolute_url }}" class="btn btn-danger">O'chirish</a>
+                      <a href="{% url "update_article_news" post.pk %}" class="btn btn-success">Taxrirlash</a>
+                      <a href="{% url "delete_article_news" post.pk %}" class="btn btn-danger">O'chirish</a>
                     </div>
                 </div>
             {% endfor %}
@@ -71,8 +41,8 @@
                         <h5 class="card-title">{{ post.title|truncatewords:10 }}</h5>
                         <p class="card-text">{{ post.body|truncatewords:10}}</p>
                         <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Batafsil Ko'rish</a>
-                        <a href="{{ post.get_absolute_url }}" class="btn btn-success">Taxrirlash</a>
-                        <a href="{{ post.get_absolute_url }}" class="btn btn-danger">O'chirish</a>
+                        <a href="{% url "update_article_elon" post.pk %}" class="btn btn-success">Taxrirlash</a>
+                        <a href="{% url "delete_article_elon" post.pk %}" class="btn btn-danger">O'chirish</a>
                     </div>
                 </div>
             {% endfor %}

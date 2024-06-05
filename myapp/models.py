@@ -42,6 +42,9 @@ class ArticleNews(models.Model):
     title = models.CharField( max_length=200, verbose_name='Sarlovha')
     body = models.TextField(verbose_name='Tana qismi')
     img = models.ImageField(upload_to='Photos/Yangiliklar/',)
+    img1 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
+    img2 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
+    img3 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
     created_at = models.DateTimeField( auto_now_add=True)
    
     def __str__(self):
@@ -80,6 +83,9 @@ class ArticleElon(models.Model):
     title = models.CharField( max_length=200, verbose_name='Sarlovha')
     body = models.TextField(verbose_name='Tana qismi')
     img = models.ImageField(upload_to='Photos/Yangiliklar/',)
+    img1 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
+    img2 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
+    img3 = models.ImageField(blank=True, default=True, upload_to='Photos/Yangiliklar/',)
     created_at = models.DateTimeField( auto_now_add=True)
     
     def __str__(self):
@@ -93,42 +99,3 @@ class ArticleElon(models.Model):
         verbose_name="Elon"
         verbose_name_plural="Elonlar"
         
-    
-# Category Facultet
-
-class CategoryFacultet(models.Model):
-    title = models.CharField( max_length=100,verbose_name='Kategoriya nomi')
-    
-    def __str__(self):
-        return self.title
-    
-    def get_absolute_url(self):
-        return reverse("CategoryElon_detail", kwargs={"pk": self.pk})
-    
-    class Meta:
-        verbose_name="Fakultetlar Kategoryasi"
-        verbose_name_plural="Fakultetlar Kategoryasi"
-    
-    
-class ArticleFacultet(models.Model):
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.ForeignKey(CategoryNews, on_delete=models.CASCADE)
-    title = models.CharField( max_length=200, verbose_name='Sarlovha')
-    body = models.TextField(verbose_name='Tana qismi')
-    img = models.ImageField(upload_to='Photos/Yangiliklar/',)
-    created_at = models.DateTimeField( auto_now_add=True)
-    
-    def __str__(self):
-        return self.title
-    
-    def get_absolute_url(self):
-        return reverse("ArticleFacultet_detail", kwargs={"pk": self.pk})
-    
-    class Meta:
-        ordering = ["-id"]
-        verbose_name="Fakultet"
-        verbose_name_plural="Fakultetlar"
-        
-
-   
-    

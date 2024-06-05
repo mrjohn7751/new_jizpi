@@ -1,5 +1,5 @@
 from urllib import request
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render,get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.views import generic
 from .forms import ArticleElonForm, ArticleNewsForm
@@ -41,6 +41,9 @@ def home(request):
     return render(request,'users/home.html',context)
 
 
+# create uchun
+
+
 def create_article_elon(request):
     if request.method == 'POST':
         form = ArticleElonForm(request.POST, request.FILES)
@@ -51,20 +54,65 @@ def create_article_elon(request):
         form = ArticleElonForm()
     return render(request, 'users/create_article_elon.html', {'form': form})
 
+# create uchun
 
 def create_article_news(request):
     if request.method == 'POST':
         form = ArticleNewsForm(request.POST, request.FILES)
         if form.is_valid():
-            article_news = form.save(commit=False)
-            # Category ma'lumotini olish va "category" maydonini to'ldirish
-            category_id = request.POST.get('category_id')  # Example: You need to get the category id from the form
-            article_news.category_id = category_id
-            article_news.save()
-            return redirect('home')  # yoki kerakli URL
+            article = form.save(commit=False)  # Obyektni yaratish, lekin hozircha saqlamaslik
+            article.save()  # Endi saqlang
+            
+            return redirect('home')  # yoki 'home' URL uchun kerakli argumentlar bering
     else:
         form = ArticleNewsForm()
     return render(request, 'users/create_article_news.html', {'form': form})
+
+
+# delate uchun
+def delete_article_news(request, pk):
+    article = get_object_or_404(ArticleNews, pk=pk)
+    if request.method == 'POST':
+        article.delete()
+        return redirect('home')  # Muvaffaqiyatli o'chirilgandan so'ng foydalanuvchini kerakli URLga yo'naltirish
+    return render(request, 'users/delete_article_news.html', {'article': article})
+
+def delete_article_elon(request, pk):
+    article = get_object_or_404(ArticleElon, pk=pk)
+    if request.method == 'POST':
+        article.delete()
+        return redirect('home')  # Muvaffaqiyatli o'chirilgandan so'ng foydalanuvchini kerakli URLga yo'naltirish
+    return render(request, 'users/delete_article_elon.html', {'article': article})
+
+
+######################################################################################
+######################################################################################
+
+def update_article_news(request, pk):
+    article = get_object_or_404(ArticleNews, pk=pk)
+    if request.method == 'POST':
+        form = ArticleNewsForm(request.POST, request.FILES, instance=article)
+        if form.is_valid():
+            form.save()
+            return redirect('home')  # yoki kerakli URLga yo'naltirish
+    else:
+        form = ArticleNewsForm(instance=article)
+    return render(request, 'users/update_article_news.html', {'form': form})
+
+def update_article_elon(request, pk):
+    article = get_object_or_404(ArticleElon, pk=pk)
+    if request.method == 'POST':
+        form = ArticleElonForm(request.POST, request.FILES, instance=article)
+        if form.is_valid():
+            form.save()
+            return redirect('home')  # yoki kerakli URLga yo'naltirish
+    else:
+        form = ArticleElonForm(instance=article)  # Bu yerda ArticleElonForm ishlatiladi
+    return render(request, 'users/update_article_elon.html', {'form': form})
+
+######################################################################################
+
+
 
 def index(request):
     ekranImg = ekranImages.objects.all()
@@ -72,8 +120,6 @@ def index(request):
     Article_news = ArticleNews.objects.all()
     Category_elon = CategoryElon.objects.all()
     Article_elon = ArticleElon.objects.all()
-    Category_facultet = CategoryFacultet.objects.all()
-    Article_facultet = ArticleFacultet.objects.all()
 
     context = {
         'ekranImg':ekranImg,
@@ -81,8 +127,6 @@ def index(request):
         'Article_news':Article_news,
         'Category_elon':Category_elon,
         'Article_elon':Article_elon,
-        'Category_facultet':Category_facultet,
-        'Article_facultet':Article_facultet,
     }
     return render(request,'index.html',context)
 
