@@ -7,6 +7,25 @@
   /* ############################################################################## */
   
 
+@media only screen and (max-width: 576px) {
+  .__user_cards .left img{
+    width: 130px !important;
+    height: 150px !important;
+    border: 1px solid red !important;
+    
+    }
+    .__user_cards .right{
+      font-size: 14px;
+    }
+    .map iframe {
+      width: 300px !important;
+      height: 250px !important;
+  }
+  .col1 img{
+    margin-left: 0px !important;
+  }
+
+}
 
   .poshta{
     text-decoration: none;
@@ -20,7 +39,18 @@
     background-color: none !important;
   }
 
- 
+ .a-link{
+  display: block;
+  width: 100% !important;
+  text-decoration: none;
+  background-color: transparent !important;
+  color: blue !important;
+  /* padding: 20px 0;
+  margin: 5px;
+  background-color: #144c84;
+  color: #fff;
+  transition: all .3s; */
+ }
 
 
 
